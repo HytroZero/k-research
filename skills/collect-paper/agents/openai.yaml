@@ -1,0 +1,3 @@
+interface:
+  display_name: "Collect Paper"
+  short_description: "Collect papers, key PDFs, and BibTeX"

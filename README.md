@@ -23,7 +23,7 @@ The suite is inspired by the small, composable, user-invoked/model-invoked desig
 
 | Skill | Use |
 |---|---|
-| `research` | Router. Helps choose the right research skill or workflow. |
+| `ask-k` | Navigation entry. Recommends a skill or workflow; starts a focused skill when explicitly asked. |
 | `discover-research-direction` | Orchestrates the complete path from field understanding to a promising direction with a practical first test. |
 
 User-invoked skills are marked with `disable-model-invocation: true` and `policy.allow_implicit_invocation: false` for Codex. A user-invoked skill may call model-invoked skills, but it must not invoke another user-invoked skill.
@@ -32,6 +32,7 @@ User-invoked skills are marked with `disable-model-invocation: true` and `policy
 
 | Skill | Use |
 |---|---|
+| `collect-paper` | Collects relevant papers from leading venues or recognized organizations, key PDFs, and an index with BibTeX. |
 | `paper-analysis` | Extracts a paper's question, contribution, mechanism, assumptions, claims, evidence, and limitations. |
 | `field-synthesis` | Synthesizes a body of papers into a structured map of methods, claims, debates, and boundaries. |
 | `opportunity-discovery` | Finds research opportunities grounded in tensions, failures, assumptions, and unresolved questions. |
@@ -46,7 +47,9 @@ Model-invoked skills can be called directly by the user or discovered by an agen
 ## Recommended workflow
 
 ```text
-/research
+/ask-k
+   |
+   +-- collect papers for a topic ----> collect-paper
    |
    +-- one paper ----------------------> paper-analysis
    |
@@ -66,6 +69,7 @@ Model-invoked skills can be called directly by the user or discovered by an agen
 
 /discover-research-direction
    |
+   +--> collect-paper (build or refresh initial corpus)
    +--> paper-analysis
    +--> field-synthesis
    +--> opportunity-discovery
@@ -85,8 +89,9 @@ easy-ai-research-skills/
 ├── README.md
 ├── GLOSSARY.md
 ├── skills/
-│   ├── research/
+│   ├── ask-k/
 │   ├── discover-research-direction/
+│   ├── collect-paper/
 │   ├── paper-analysis/
 │   ├── field-synthesis/
 │   ├── opportunity-discovery/
@@ -126,7 +131,8 @@ The suite uses standard `SKILL.md` frontmatter plus Codex metadata. Some hosts m
 
 ## How to use
 
-- Start with `/research` when you are unsure which research operation is appropriate.
+- Use `collect-paper` with a broad topic to create `papers/index.md`, `papers/references.bib`, a search log, and key PDFs. Sources must qualify through a leading conference or a recognized team, university, or company; eligible preprints are included.
+- Start with `/ask-k` when you are unsure which research operation is appropriate.
 - Start with `/discover-research-direction` when you want a complete, guided exploration.
 - Invoke model skills directly when you already know the task, for example `novelty-audit` on an existing idea.
 - Give skills a project directory containing the research artifacts, or ask them to produce a self-contained Markdown result when no persistent workspace exists.

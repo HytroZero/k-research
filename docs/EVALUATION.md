@@ -18,6 +18,7 @@ Use time-sliced evaluation where possible: only provide the model papers availab
 
 | Skill | Useful measures |
 |---|---|
+| `collect-paper` | topic relevance, verified source eligibility, version deduplication, BibTeX accuracy, working PDF links |
 | `paper-analysis` | claim extraction precision, evidence-locator accuracy, limitation recall |
 | `field-synthesis` | coverage of major research clusters, correct conflict mapping, unsupported synthesis rate |
 | `opportunity-discovery` | expert-rated importance, evidence traceability, false-gap rate |

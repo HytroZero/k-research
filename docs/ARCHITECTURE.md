@@ -31,10 +31,11 @@ The state layer stores papers, claims, evidence, opportunities, hypotheses, cont
 ```text
 Human
   |
-  +--> research (user-invoked router)
+  +--> ask-k (user-invoked router)
   |
   +--> discover-research-direction (user-invoked orchestrator)
           |
+          +--> collect-paper
           +--> paper-analysis
           +--> field-synthesis
           +--> opportunity-discovery
@@ -51,7 +52,7 @@ A user-invoked skill must not invoke another user-invoked skill. The router can 
 
 ## Main research loop
 
-1. Build a field model from a defined corpus.
+1. Collect and index an initial corpus with BibTeX and key PDFs, then build a field model.
 2. Find useful problems and opportunities from literature, observations, or task needs.
 3. Develop concrete ideas with a rationale and expected observable outcomes.
 4. Compare developed candidates against the closest prior work.

@@ -88,6 +88,71 @@
     },
     "notes": {
       "type": "string"
+    },
+    "citation_key": {
+      "type": "string",
+      "minLength": 1
+    },
+    "inclusion_reason": {
+      "type": "string"
+    },
+    "source_eligibility": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "criterion",
+        "name",
+        "rationale",
+        "verification_url"
+      ],
+      "properties": {
+        "criterion": {
+          "enum": [
+            "conference",
+            "team",
+            "university",
+            "company"
+          ]
+        },
+        "name": {
+          "type": "string"
+        },
+        "rationale": {
+          "type": "string"
+        },
+        "verification_url": {
+          "type": "string",
+          "format": "uri"
+        }
+      }
+    },
+    "pdf_path": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Path relative to the paper index."
+    },
+    "pdf_url": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "uri"
+    },
+    "pdf_version": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "download_status": {
+      "enum": [
+        "saved",
+        "not_selected",
+        "unavailable",
+        "failed"
+      ]
     }
   }
 }

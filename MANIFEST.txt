@@ -1,4 +1,4 @@
-44 authored files
+47 authored files
 
 GLOSSARY.md
 README.md
@@ -19,8 +19,12 @@ schemas/opportunity.schema.json
 schemas/paper.schema.json
 schemas/research-decision.schema.json
 schemas/research-project.schema.json
+skills/ask-k/SKILL.md
+skills/ask-k/agents/openai.yaml
 skills/belief-update/SKILL.md
 skills/belief-update/agents/openai.yaml
+skills/collect-paper/SKILL.md
+skills/collect-paper/agents/openai.yaml
 skills/decisive-test-design/SKILL.md
 skills/decisive-test-design/agents/openai.yaml
 skills/discover-research-direction/SKILL.md
@@ -37,10 +41,9 @@ skills/paper-analysis/SKILL.md
 skills/paper-analysis/agents/openai.yaml
 skills/red-team/SKILL.md
 skills/red-team/agents/openai.yaml
-skills/research/SKILL.md
-skills/research/agents/openai.yaml
 templates/decision-record.md
 templates/hypothesis-card.md
 templates/novelty-audit.md
+templates/paper-index.md
 templates/paper-note.md
 templates/research-brief.md

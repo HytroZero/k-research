@@ -5,7 +5,7 @@ This document defines the shared language and lifecycle for research artifacts. 
 ## Core entities
 
 - **ResearchProject:** scope, domain, central question, constraints, and current status.
-- **Paper:** bibliographic identity, source provenance, and extracted content.
+- **Paper:** bibliographic identity, source provenance, and extracted content. Collection records also carry a citation key, inclusion reason, verified source eligibility, and optional PDF location/version. `source_access` records inspection depth, independently of download status.
 - **Claim:** a proposition made by a source or proposed by the current research.
 - **Evidence:** a source-grounded observation tied to a locator and a relation to one or more claims.
 - **Opportunity:** an evidence-grounded reason to investigate a problem.

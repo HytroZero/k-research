@@ -20,6 +20,8 @@ Turn a research area into promising candidates and an actionable recommendation.
 
 Establish the target problem, community, intended contribution, available resources, and existing corpus. If the scope is too broad for useful investigation, propose a focused scope to the researcher.
 
+Use `collect-paper` to build or refresh the initial corpus from the broad direction, saving a paper index, BibTeX, and accessible key PDFs. Reuse an adequate existing collection.
+
 Use `paper-analysis` and `field-synthesis` to understand representative approaches and relevant bottlenecks. Build enough context to generate concrete ideas; expand the literature pass as candidates reveal specific questions.
 
 **Ready to proceed:** the scope, relevant approaches, and practical constraints are clear enough to identify useful problems.

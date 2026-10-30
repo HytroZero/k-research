@@ -1,0 +1,5 @@
+interface:
+  display_name: "Ask K"
+  short_description: "Choose a research skill or workflow"
+policy:
+  allow_implicit_invocation: false
