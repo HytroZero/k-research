@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Evidence",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "evidence_id",
+    "source_id",
+    "relation",
+    "status",
+    "summary"
+  ],
+  "properties": {
+    "evidence_id": {
+      "type": "string"
+    },
+    "source_id": {
+      "type": "string"
+    },
+    "source_url": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "uri"
+    },
+    "source_locator": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "relation": {
+      "enum": [
+        "supports",
+        "contradicts",
+        "qualifies",
+        "contextualizes",
+        "does_not_address"
+      ]
+    },
+    "status": {
+      "enum": [
+        "direct",
+        "indirect",
+        "secondary",
+        "unverified",
+        "unknown"
+      ]
+    },
+    "evidence_type": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "string"
+    },
+    "quote": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "retrieved_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "claim_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

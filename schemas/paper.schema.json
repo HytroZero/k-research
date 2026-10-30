@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Paper",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "paper_id",
+    "title",
+    "source_access"
+  ],
+  "properties": {
+    "paper_id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "authors": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "year": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "venue": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "doi": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "preprint_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "url": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "uri"
+    },
+    "abstract": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "version_inspected": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source_access": {
+      "enum": [
+        "full_text",
+        "abstract_only",
+        "metadata_only",
+        "inaccessible",
+        "unverified"
+      ]
+    },
+    "retrieved_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "claim_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "notes": {
+      "type": "string"
+    }
+  }
+}

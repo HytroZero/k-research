@@ -1,0 +1,5 @@
+interface:
+  display_name: "Discover Research Direction"
+  short_description: "Find and vet a research direction"
+policy:
+  allow_implicit_invocation: false

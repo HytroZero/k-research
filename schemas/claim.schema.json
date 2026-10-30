@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Claim",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "claim_id",
+    "text",
+    "claim_type",
+    "status"
+  ],
+  "properties": {
+    "claim_id": {
+      "type": "string"
+    },
+    "paper_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "text": {
+      "type": "string"
+    },
+    "claim_type": {
+      "enum": [
+        "descriptive",
+        "comparative",
+        "causal",
+        "mechanistic",
+        "theoretical",
+        "generalization",
+        "novelty",
+        "practical",
+        "hypothesis"
+      ]
+    },
+    "scope": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "proposed",
+        "supported",
+        "qualified",
+        "contradicted",
+        "unverified",
+        "unknown"
+      ]
+    },
+    "evidence_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "alternative_explanations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

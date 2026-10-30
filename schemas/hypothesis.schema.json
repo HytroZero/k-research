@@ -1,0 +1,104 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Hypothesis",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "hypothesis_id",
+    "statement",
+    "rationale",
+    "predictions",
+    "status"
+  ],
+  "properties": {
+    "hypothesis_id": {
+      "type": "string"
+    },
+    "statement": {
+      "type": "string",
+      "minLength": 1
+    },
+    "mechanism": {
+      "type": "string",
+      "description": "Optional process explanation; develop when the contribution or test depends on it."
+    },
+    "assumptions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "predictions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "prediction",
+          "observable"
+        ],
+        "properties": {
+          "prediction": {
+            "type": "string"
+          },
+          "observable": {
+            "type": "string"
+          },
+          "distinguishes_from": {
+            "type": "string"
+          }
+        }
+      },
+      "minItems": 1
+    },
+    "falsification_conditions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Optional explicit rejection conditions, useful for targeted hypothesis tests."
+    },
+    "alternatives": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "contribution_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "evidence_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "status": {
+      "enum": [
+        "candidate",
+        "under_review",
+        "testable",
+        "supported",
+        "weakened",
+        "rejected",
+        "revised",
+        "deferred"
+      ]
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "rationale": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Practical intuition or reasoning for trying the proposal; formal theory is optional for empirical ideas."
+    },
+    "first_test": {
+      "type": "string",
+      "description": "Initial comparison and how its outcomes guide further work."
+    }
+  }
+}

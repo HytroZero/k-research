@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ResearchDecision",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "decision_id",
+    "decision",
+    "rationale",
+    "evidence_refs",
+    "created_at"
+  ],
+  "properties": {
+    "decision_id": {
+      "type": "string"
+    },
+    "decision": {
+      "enum": [
+        "pursue",
+        "refine",
+        "defer",
+        "reject",
+        "continue",
+        "revise",
+        "stop"
+      ]
+    },
+    "rationale": {
+      "type": "string"
+    },
+    "alternatives": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "evidence_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "remaining_uncertainty": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "reconsideration_trigger": {
+      "type": "string"
+    },
+    "supersedes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

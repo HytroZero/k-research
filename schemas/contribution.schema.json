@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Contribution",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "contribution_id",
+    "statement",
+    "novelty_dimensions",
+    "difference_from_prior_work",
+    "status"
+  ],
+  "properties": {
+    "contribution_id": {
+      "type": "string"
+    },
+    "statement": {
+      "type": "string"
+    },
+    "novelty_dimensions": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "problem",
+          "mechanism",
+          "method",
+          "theoretical",
+          "empirical",
+          "evaluation",
+          "boundary",
+          "synthesis"
+        ]
+      }
+    },
+    "difference_from_prior_work": {
+      "type": "string"
+    },
+    "boundary_conditions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "evidence_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "status": {
+      "enum": [
+        "proposed",
+        "substantiated",
+        "plausible_unverified",
+        "incremental",
+        "anticipated",
+        "contradicted",
+        "not_assessable"
+      ]
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1
+    }
+  }
+}

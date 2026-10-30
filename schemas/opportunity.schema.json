@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ResearchOpportunity",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "opportunity_id",
+    "problem_statement",
+    "opportunity_type",
+    "importance_rationale",
+    "evidence_refs",
+    "status"
+  ],
+  "properties": {
+    "opportunity_id": {
+      "type": "string"
+    },
+    "problem_statement": {
+      "type": "string"
+    },
+    "opportunity_type": {
+      "enum": [
+        "contradiction",
+        "boundary",
+        "assumption",
+        "anomaly",
+        "measurement",
+        "theory_evidence_gap",
+        "other"
+      ]
+    },
+    "importance_rationale": {
+      "type": "string"
+    },
+    "known_prior_work": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "plausible_explanations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "unknowns": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "evidence_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "status": {
+      "enum": [
+        "candidate",
+        "under_review",
+        "accepted",
+        "rejected",
+        "deferred"
+      ]
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1
+    }
+  }
+}

@@ -1,0 +1,3 @@
+interface:
+  display_name: "Belief Update"
+  short_description: "Update research beliefs from new evidence"
