@@ -1,4 +1,4 @@
-55 authored files
+56 authored files
 
 .agents/plugins/marketplace.json
 .codex-plugin/plugin.json
@@ -13,6 +13,7 @@ README.zh-CN.md
 docs/ARCHITECTURE.md
 docs/EVALUATION.md
 docs/MCP-CONTRACT.md
+docs/PROJECT-LAYOUT.md
 docs/RESEARCH-STATE.md
 docs/references/DECISION-RUBRIC.md
 docs/references/EVIDENCE-STANDARDS.md

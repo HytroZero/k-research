@@ -32,7 +32,7 @@ Resources should be read-oriented snapshots. Mutations should use tools with exp
 1. **Stable identifiers:** papers, claims, evidence, hypotheses, and decisions need durable IDs.
 2. **Source provenance:** every retrieved paper and evidence record carries a canonical source and retrieval metadata.
 3. **Version checks:** writes should support optimistic concurrency, for example `expected_version`.
-4. **Append-only history:** decisions and evidence updates create events; historical records remain inspectable.
+4. **Decision traceability:** retain meaningful decisions and their reasons. Backend events may carry these changes when needed by a consumer; they do not require local event logs, snapshots, or historical file exports. Follow [Project Layout](PROJECT-LAYOUT.md) for local artifacts.
 5. **Idempotency:** event writes should accept an idempotency key where retries are possible.
 6. **Pagination:** paper and artifact listings must be paginated.
 7. **Explicit access state:** distinguish full text, abstract only, metadata only, inaccessible, and unverified.

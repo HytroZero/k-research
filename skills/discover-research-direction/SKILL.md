@@ -8,6 +8,10 @@ disable-model-invocation: true
 
 Turn a research area into a well-motivated problem and a concrete proposed solution. The default deliverable is a Research Brief centered on the problem, method, and substantive difference from prior work.
 
+## Project files
+
+Before writing project files, read [Project Layout](../../docs/PROJECT-LAYOUT.md) and follow its destinations, update rules, and completion checks. Maintain `research/overview.md`, direction `proposal.md` and `related-work.md` files, and `research/decisions.md`. The Research Brief is the linked overview and direction proposal, not an additional report. Keep the README reading entry current.
+
 ## Operating stance
 
 - Read `GLOSSARY.md` and existing project artifacts; reuse relevant literature and decisions.
@@ -45,9 +49,9 @@ Use `red-team` when requested or when a concrete unresolved concern warrants dee
 
 ## 5. Recommend and record
 
-Compare candidates using `docs/references/DECISION-RUBRIC.md`. Produce `templates/research-brief.md` and `templates/decision-record.md`. Give the problem and method the explanatory detail needed to judge the direction; integrate prior work where it motivates the problem or a design choice. Record why alternatives were revised, deferred, or rejected.
+Compare candidates using `docs/references/DECISION-RUBRIC.md`. Use `templates/research-brief.md` for the overview and linked direction proposals, and append decisions using `templates/decision-record.md`. Give the problem and method the explanatory detail needed to judge the direction; integrate prior work where it motivates the problem or a design choice. Record why alternatives were revised, deferred, or rejected.
 
-Ask the researcher to choose when priorities or resource trade-offs require their judgment. Persist artifacts and append a history event if the research-state interface is available.
+Ask the researcher to choose when priorities or resource trade-offs require their judgment. Update current artifacts and record meaningful decisions in `research/decisions.md`. Use a connected research-state interface only for needed structured persistence, without duplicating local history.
 
 ## Follow-on: experiment planning
 

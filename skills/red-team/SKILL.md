@@ -7,6 +7,10 @@ description: Adversarially review a research idea or hypothesis. Use when the us
 
 Make the strongest evidence-based case against the candidate. Use this focused review after the candidate has been developed. Match objections to its contribution type using `docs/references/SCIENTIFIC-CLAIMS.md`.
 
+## Project files
+
+Before writing project files, read [Project Layout](../../docs/PROJECT-LAYOUT.md) and follow its destinations, update rules, and completion checks. Integrate objections and their resolution into the direction's `proposal.md`, `related-work.md`, or existing `evaluation-plan.md`, according to the subject. Record changed decisions in `research/decisions.md`; do not create a separate review report or an unrequested experiment plan.
+
 ## Process
 
 1. **Read the full case.** Inspect the research question, hypothesis, mechanism, novelty audit, evidence, proposed tests, and project constraints. Read `GLOSSARY.md` and prior decisions.

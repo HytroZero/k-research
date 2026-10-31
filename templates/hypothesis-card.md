@@ -1,3 +1,5 @@
+> Placement: Update `research/directions/<direction-name>/proposal.md`. Integrate supporting hypotheses into that direction's proposal rather than creating separate cards. See [Project Layout](../docs/PROJECT-LAYOUT.md). This placement note is a template instruction, not output content.
+
 # Hypothesis Card
 
 - Hypothesis ID:

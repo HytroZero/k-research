@@ -26,6 +26,10 @@ MCP exposes a small set of operations for literature retrieval, citation context
 
 The state layer stores papers, claims, evidence, opportunities, hypotheses, contributions, and decisions. It gives every skill and the GUI a common source of truth.
 
+## Project files
+
+[Project Layout](PROJECT-LAYOUT.md) defines the mandatory research-project tree. Human documents live in `README.md`, `research/`, and `papers/`; agent state, cache, and scratch work live in `.research/`. Skills update shared documents by research object rather than producing a file per invocation. The Research Brief spans the overview and linked direction proposal; templates are content guides, not output filenames.
+
 ## Invocation topology
 
 ```text

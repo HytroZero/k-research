@@ -1,3 +1,5 @@
+> Placement: Update `research/directions/<direction-name>/related-work.md`. Summarize the judgment and link this comparison from the proposal. See [Project Layout](../docs/PROJECT-LAYOUT.md). This placement note is a template instruction, not output content.
+
 # Novelty Audit
 
 > Candidate ID:  

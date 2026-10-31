@@ -7,6 +7,10 @@ description: Synthesize a body of research papers into a field map. Use when map
 
 Build a structured model of a research field from a defined paper corpus. A field map is an evidence-backed account of how ideas relate, not a pile of summaries.
 
+## Project files
+
+Before writing project files, read [Project Layout](../../docs/PROJECT-LAYOUT.md) and follow its destinations, update rules, and completion checks. Update the field account and corpus limitations in `research/overview.md`; link detailed paper notes rather than copying them.
+
 ## Process
 
 1. **Set the corpus boundary.** Record the research question, inclusion/exclusion criteria, databases or sources searched, time range, and known access or language limits.

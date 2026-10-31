@@ -7,6 +7,10 @@ description: Update a research project's hypotheses and decisions from new evide
 
 Integrate new evidence into the research state without rewriting history or overreacting to one result.
 
+## Project files
+
+Before writing project files, read [Project Layout](../../docs/PROJECT-LAYOUT.md) and follow its destinations, update rules, and completion checks. Update the affected human documents and append meaningful judgment changes to `research/decisions.md`. Update optional structured state in place; do not save a separate update report.
+
 ## Process
 
 1. **Identify the incoming evidence.** Record source, origin, timestamp, author/agent, artifact ID, and exact locator. For experiment results, require the execution agent's configuration, data version, code version, and measurement definition when available.
@@ -17,7 +21,7 @@ Integrate new evidence into the research state without rewriting history or over
 6. **Update status.** Use `supported`, `weakened`, `rejected`, `revised`, or `unresolved` as appropriate. Status is qualitative and must be justified. Do not manufacture precise probabilities.
 7. **Revisit downstream artifacts.** Mark affected opportunities, contribution claims, novelty judgments, test plans, and decisions as current, superseded, or requiring review.
 8. **Choose the next decision.** Recommend continue, revise, run a discriminating follow-up, defer, or stop. Explain what evidence would change that recommendation.
-9. **Persist an event.** Append a new evidence/update event and preserve prior states. Never silently overwrite the previous belief or decision.
+9. **Record the change.** Update current artifacts and append meaningful changes of judgment, their evidence, and reasons to `research/decisions.md`. Follow the shared state contract; prior file copies are not required.
 
 ## Output
 
@@ -37,4 +41,4 @@ Tie the update to the observed result and tested conditions. If measurement nois
 
 ## Completion criterion
 
-The new evidence is traceably connected to the claims it affects, the reason for every status change is recorded, and previous decisions remain recoverable.
+The new evidence is traceably connected to the claims it affects, the reason for every status change is recorded, and previous decisions remain readable in `research/decisions.md`.

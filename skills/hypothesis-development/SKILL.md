@@ -7,6 +7,10 @@ description: Develop a research opportunity into a concrete method, explaining h
 
 Develop an idea far enough that the researcher can understand and judge the proposed solution. Read `docs/references/SCIENTIFIC-CLAIMS.md` for the evidence standard appropriate to its contribution type.
 
+## Project files
+
+Before writing project files, read [Project Layout](../../docs/PROJECT-LAYOUT.md) and follow its destinations, update rules, and completion checks. Update `research/directions/<direction-name>/proposal.md` using the hypothesis-card template. Link the direction from `research/overview.md`.
+
 ## Process
 
 1. **Define the problem and core tension.** Describe the task, setting, specific difficulty or questioned assumption, and why the closest known approaches leave it unresolved.

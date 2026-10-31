@@ -1,44 +1,26 @@
-# Research Brief
+> Placement: Update `research/overview.md`; use `hypothesis-card.md` for each linked direction proposal. Together these documents form the Research Brief. See [Project Layout](../docs/PROJECT-LAYOUT.md). This placement note is a template instruction, not output content.
 
-> Status: draft / under review / selected / rejected / deferred
-> Project ID:
-> Version:
-> Updated:
+# Research Overview
 
-## 1. Problem and value
+- Project ID:
+- Updated:
 
-Describe the task, setting, specific difficulty or questioned assumption, and practical or scientific consequence. Use relevant prior work to explain why the problem remains open; cite sources or observations.
+## Research question and scope
 
-## 2. Proposed method
+Describe the task, setting, constraints, and why the problem matters. Link the paper index and state consequential corpus gaps.
 
-Explain inputs, outputs, and key steps. Connect the key design choices to the stated difficulty and make the central operation concrete.
+## Field account
 
-## 3. Worked example
+Explain the major approaches, their relationships, and evidence-backed tensions relevant to this question. Link paper notes for detailed readings.
 
-Carry a small concrete instance through the current approach and the proposal to show how their behavior differs and where the key design trade-off lies.
+## Problems and candidate directions
 
-## 4. Difference from closest work
+Describe worthwhile problems and initial solution angles. For developed candidates, summarize their problem, core idea, useful difference, and current status, then link the direction proposal. Keep detailed methods and worked examples in those proposals.
 
-| Paper | Existing approach | Shared elements | Substantive difference and value | Evidence locator |
-|---|---|---|---|---|
+## Current recommendation
 
-Summarize the novelty judgment and link any focused audit. Use this comparison to refine the problem and method above.
+State which direction to pursue, refine, defer, or reject and why. Compare alternatives using problem value, method fit, closest work, and basic feasibility. Link the relevant entries in `decisions.md`.
 
-## 5. Expected contribution and basic feasibility
+## Next action
 
-Explain the useful capability or understanding success would add, essential resource requirements, and unresolved design choices.
-
-## 6. Recommendation
-
-- Decision: pursue / refine / defer / reject
-- Reason grounded in the problem, method, and closest work:
-- Next action:
-- Alternatives considered:
-
-## 7. Source provenance
-
-List sources, queries, dates, and any access gap that affects the comparison.
-
-## Optional follow-on work
-
-When experiments are requested or underway, link the separate experiment plan and briefly state what it should resolve. Keep configurations, baselines, ablations, and execution schedules in that plan. Add mechanism, theory, or concrete risks when they affect the contribution or recommendation.
+Identify the next design question, targeted search, or requested validation. Link existing evaluation plans when applicable; do not create one merely to fill this section.

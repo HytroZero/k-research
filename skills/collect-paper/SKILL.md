@@ -7,6 +7,10 @@ description: Collect papers for a broad research direction, screen relevant work
 
 Turn a broad research direction into a usable initial paper collection. Produce a source-checked index and bibliography for subsequent reading. Field synthesis and research-direction recommendations belong to other skills.
 
+## Project files
+
+Before writing project files, read [Project Layout](../../docs/PROJECT-LAYOUT.md) and follow its destinations, update rules, and completion checks. Update `papers/index.md` and `papers/references.bib`; save originals in `papers/pdf/`. Keep retrieval data in `.research/cache/` and temporary collection scripts and execution logs in `.research/scratch/`.
+
 ## 1. Scope the collection
 
 Accept a topic phrase as sufficient input. Use optional seed papers, subtopics, dates, language preferences, and project constraints when supplied. Inspect an existing collection before starting a new one. Ask only when different interpretations would materially change the search.
@@ -42,21 +46,13 @@ Retrieve BibTeX from an authoritative bibliographic export where possible. Other
 
 ## 5. Build the index
 
-Use the following output layout in the user's project, adapting to an existing collection layout:
-
-```text
-papers/
-  index.md
-  references.bib
-  search-log.md
-  pdf/
-```
+Use the standard project layout. Maintain one complete index and bibliography across collection runs.
 
 The index contains one row per retained paper with paper ID, citation key, title, authors, year, venue/publication status, qualifying source and verification link, canonical paper URL, inclusion reason, and relative PDF path or download status. Keep missing metadata explicit. Record inspection depth separately from download status.
 
-Use `templates/paper-index.md` from the suite root when available; the field contract above is sufficient when using this skill alone. If persisting structured records, use `schemas/paper.schema.json`; the Markdown index is sufficient without a state backend.
+Use `templates/paper-index.md` from the suite root. If persisting structured records, use `schemas/paper.schema.json`; the Markdown index is sufficient without a state backend.
 
-In the search log, record scope, query families, sources searched, retrieval dates, and material exclusions or access gaps. Preserve earlier collection history when updating.
+In the index, maintain the search scope, query families, sources searched, retrieval dates, and material exclusions or access gaps. Temporary search execution details belong in `.research/scratch/`.
 
 ## Completion
 

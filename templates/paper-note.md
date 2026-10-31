@@ -1,3 +1,5 @@
+> Placement: Update `papers/notes/<paper-id>.md` and link it from the paper index. Keep one note per analyzed paper. See [Project Layout](../docs/PROJECT-LAYOUT.md). This placement note is a template instruction, not output content.
+
 # Paper Note
 
 ## Identity

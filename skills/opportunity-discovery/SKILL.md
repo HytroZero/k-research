@@ -7,6 +7,10 @@ description: Find worthwhile research problems from practical bottlenecks, desir
 
 Identify problems worth solving and promising starting points for solutions.
 
+## Project files
+
+Before writing project files, read [Project Layout](../../docs/PROJECT-LAYOUT.md) and follow its destinations, update rules, and completion checks. Update the problems and candidate comparison in `research/overview.md`. Create a direction proposal only when an opportunity is developed into a distinct candidate.
+
 ## Process
 
 1. **Read the context.** Inspect the field map, relevant papers, project constraints, and prior decisions.

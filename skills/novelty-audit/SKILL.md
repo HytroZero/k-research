@@ -7,6 +7,10 @@ description: Audit the substantive novelty of a research idea. Use when comparin
 
 Determine whether the candidate makes a material contribution beyond the closest prior work. The audit is a source-backed comparison, not a novelty score generated from intuition.
 
+## Project files
+
+Before writing project files, read [Project Layout](../../docs/PROJECT-LAYOUT.md) and follow its destinations, update rules, and completion checks. Update `research/directions/<direction-name>/related-work.md` using the novelty-audit template, and update the proposal's summary of the difference.
+
 ## Process
 
 1. **Decompose the candidate.** Extract its problem, proposed method or finding, setting, and intended contribution. Include a mechanism when it carries the contribution. If the idea is too vague to compare, develop it with `hypothesis-development` or ask for the missing decision.

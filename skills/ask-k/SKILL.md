@@ -8,6 +8,10 @@ disable-model-invocation: true
 
 Help the researcher choose where to start and what to do next. Read the relevant skill's `SKILL.md` before describing its behavior or recommending that a step be skipped. The map below is for orientation; each skill owns its detailed procedure.
 
+## Project files
+
+Before writing project files, read [Project Layout](../../docs/PROJECT-LAYOUT.md) and follow its destinations, update rules, and completion checks. Respond in the conversation; routing alone creates no project files. If explicitly asked to start a skill, use its output destinations.
+
 ## Main flow: problem to proposed method
 
 1. **`collect-paper`** takes a broad topic and builds a screened paper collection, an index, BibTeX, and key local PDFs. Start here when the researcher needs reading material.

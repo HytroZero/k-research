@@ -7,6 +7,10 @@ description: Analyze an academic paper. Use when extracting a paper's research q
 
 Extract what a paper actually establishes, with source locators. The output should let another researcher use the paper without relying on a vague summary.
 
+## Project files
+
+Before writing project files, read [Project Layout](../../docs/PROJECT-LAYOUT.md) and follow its destinations, update rules, and completion checks. Update `papers/notes/<paper-id>.md` and link it from `papers/index.md`. Store extracted text in `.research/cache/`.
+
 ## Process
 
 1. **Identify the source.** Resolve title, authors, year, venue/version, DOI or preprint ID, canonical URL, and retrieval date. Note whether you inspected full text, abstract only, or metadata only.

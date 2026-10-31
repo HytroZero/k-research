@@ -1,6 +1,6 @@
 # Research State and Artifact Contract
 
-This document defines the shared language and lifecycle for research artifacts. JSON Schemas in `schemas/` are the machine-readable contracts; Markdown templates in `templates/` are readable views.
+This document defines the shared language and lifecycle for research artifacts. JSON Schemas in `schemas/` are the machine-readable contracts; Markdown templates in `templates/` guide human-readable content. Read [Project Layout](PROJECT-LAYOUT.md) before persisting artifacts; it owns paths, human/agent separation, migration, and file lifecycle.
 
 ## Core entities
 
@@ -17,11 +17,7 @@ This document defines the shared language and lifecycle for research artifacts. 
 
 Every artifact has a stable ID. Do not use titles as IDs. A title can change; identity should not.
 
-When an artifact materially changes:
-1. preserve the prior version;
-2. create a new version or append a change event;
-3. record what changed and why;
-4. link the new version to the version it supersedes.
+When an artifact materially changes, update its current document and any consumed structured record in place. Record meaningful changes of judgment and their reasons in `research/decisions.md`, linking superseding decisions by stable ID. Git may retain file history; neither Git nor non-Git projects create backup copies, snapshots, or local history/event files. Version counters serve identity and concurrency, not a requirement to retain old files.
 
 A new paper, result, or counterexample should create new evidence records. Do not silently edit the historical record to make the current narrative look consistent.
 
@@ -48,7 +44,7 @@ Use explicit status labels:
 
 A skill must not upgrade `indirect`, `secondary`, or `unverified` evidence to `direct` without checking the primary source.
 
-Hypothesis records require `rationale` and at least one observable prediction. The observable describes the expected task behavior; it need not specify a measurement protocol. `first_test` is optional and is populated when experiment planning begins. When updating an older record, add a rationale from the documented idea and preserve the prior version.
+Hypothesis records require `rationale` and at least one observable prediction. The observable describes the expected task behavior; it need not specify a measurement protocol. `first_test` is optional and is populated when experiment planning begins. When updating an older record, add a rationale from the documented idea and record any changed judgment in the decision log.
 
 ## Hypothesis lifecycle
 

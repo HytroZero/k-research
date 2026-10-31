@@ -36,6 +36,12 @@ to explore research directions in efficient long-context inference.
 
 You can also use any [individual skill](skills/) directly. Direction discovery centers on the problem, proposed method, and difference from prior work. Detailed experiment design follows when experiments or a full research plan are requested, or a developed method is ready for validation. Outputs include paper notes, literature maps, research proposals, and separate experiment plans.
 
+## Research project files
+
+Research outputs use one [standard layout](docs/PROJECT-LAYOUT.md): `README.md` is the human entry point, `research/` holds the overview and direction proposals, and `papers/` holds the complete index, bibliography, notes, and PDFs. Agent-only state, cache, and temporary work stay in `.research/`.
+
+Skills update current documents rather than saving a report per run. Files are created only when needed; experiment plans remain a follow-on deliverable. Existing K Research outputs are consolidated into this layout. Meaningful decision changes stay in `research/decisions.md`; no file snapshots or backup history are generated, including without Git.
+
 ## Skills
 
 | Skill | Description |

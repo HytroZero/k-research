@@ -44,6 +44,20 @@ Check these cases alongside literature accuracy:
 - An undefined central score or operation: identify the missing method design rather than compensate with detailed baselines.
 - A cheap experiment attached to a weak problem: prioritize problem value and method fit over experimental convenience.
 
+## Project layout cases
+
+Evaluate persisted outputs against [Project Layout](PROJECT-LAYOUT.md):
+
+- Collect 22 papers, then 6 more: one index and bibliography cover all 28; no supplement files remain.
+- Analyze the same paper twice: update one note and its index link; extracted text stays in the agent cache.
+- Develop, audit, and review a direction: update its proposal and related-work document, with no per-skill reports or unrequested evaluation plan.
+- Resume a project: the README leads to the current recommendation and evidence without requiring internal state files.
+- Revise a conclusion without Git: update current documents and append the meaningful decision change; create no snapshots or history directory.
+- Migrate a mixed old layout: consolidate unique content, repair links, and remove superseded K Research outputs without touching unrelated project files.
+- Finish collection or analysis: obsolete scratch work is removed; no saved completion or verification report is created.
+
+Distinguish textual consistency review from observed agent behavior on these cases.
+
 ## Human review
 
 Use at least two domain experts for high-stakes benchmark cases where feasible. Ask them to annotate independently before adjudication. Record disagreement; expert disagreement is itself a property of the task.

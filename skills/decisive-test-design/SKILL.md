@@ -9,6 +9,10 @@ Design a test that helps decide whether to continue, revise, or stop investing i
 
 Start from the problem, method, and expected contribution. If a central method operation is still undefined, resolve it with `hypothesis-development` before specifying its validation. A diagnostic experiment can address an open problem question when that is the requested task.
 
+## Project files
+
+Before writing project files, read [Project Layout](../../docs/PROJECT-LAYOUT.md) and follow its destinations, update rules, and completion checks. Update `research/directions/<direction-name>/evaluation-plan.md` and link it from the proposal. A requested diagnostic test may use a direction directory named for the research question without inventing a method proposal; link that plan directly from `research/overview.md`.
+
 ## Process
 
 1. **Name the decision.** State what the test should resolve: whether a method helps, whether an effect is useful, or which explanation fits.
