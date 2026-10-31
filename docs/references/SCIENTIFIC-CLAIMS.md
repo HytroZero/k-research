@@ -15,7 +15,7 @@ Classify claims so the evidence standard matches what is being asserted.
 
 ## Research stage and contribution type
 
-At the idea stage, a worthwhile problem, reasonable intuition, and a practical test are sufficient to begin exploration. Use the table above to plan evidence collection; existing proof or experimental support is not a prerequisite for proposing an empirical idea.
+At the idea stage, develop a worthwhile problem, a concrete method, and a rationale connecting its design to the difficulty. Explain the expected contribution and compare known approaches. Use the table above to distinguish claims from established results and, when validation begins, to plan evidence collection. A detailed test plan or existing experimental support is not a prerequisite for proposing an empirical idea.
 
 For empirical methods, improvements in capability, performance, efficiency, or reliability can carry the contribution. Develop formal theory when the work makes a theoretical claim, and competing mechanism explanations when the work claims to explain a process. Distinguish a design intuition from a demonstrated explanation.
 

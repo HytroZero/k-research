@@ -7,41 +7,38 @@
 
 ## 1. Problem and value
 
-## 2. Field context
+Describe the task, setting, specific difficulty, and practical consequence. Use relevant prior work to explain why the difficulty remains; cite sources or observations.
 
-Summarize the relevant approaches and the opportunity they leave.
+## 2. Proposed method
 
-## 3. Proposed idea
+Explain inputs, outputs, and key steps. Connect the key design choices to the stated difficulty and make the central operation concrete.
 
-Describe the method or intervention and the intuition behind it.
+## 3. Worked example
 
-## 4. Closest prior work
+Carry a small instance through the current approach and the proposal. Label illustrative examples and distinguish expected behavior from observed results.
 
-| Paper | What it establishes | Overlap | Candidate's difference | Evidence locator |
+## 4. Difference from closest work
+
+| Paper | Existing approach | Shared elements | Substantive difference and value | Evidence locator |
 |---|---|---|---|---|
 
-State the novelty status and why the difference matters.
+Summarize the novelty judgment and link any focused audit. Use this comparison to refine the problem and method above.
 
-## 5. Expected outcome and contribution
+## 5. Expected contribution and basic feasibility
 
-State what success would add and how it would be measured.
+Explain the useful capability or understanding success would add, essential resource requirements, and unresolved design choices.
 
-## 6. First test
-
-Include the setup, relevant baseline, necessary controls, and result-to-decision rules.
-
-## 7. Recommendation
+## 6. Recommendation
 
 - Decision: pursue / refine / defer / reject
-- Reason to pursue or revise:
+- Reason grounded in the problem, method, and closest work:
 - Next action:
-- Results that would change the decision:
 - Alternatives considered:
 
-## 8. Source provenance
+## 7. Source provenance
 
 List sources, queries, dates, and any access gap that affects the comparison.
 
-## Optional analysis
+## Optional follow-on work
 
-Add mechanism or theory analysis when it is part of the contribution. Include concrete risks and their next actions when they affect the recommendation. Add red-team findings if a full review was performed. Omit unused sections.
+When experiments are requested or underway, link the separate experiment plan and briefly state what it should resolve. Keep configurations, baselines, ablations, and execution schedules in that plan. Add mechanism, theory, or concrete risks when they affect the contribution or recommendation.

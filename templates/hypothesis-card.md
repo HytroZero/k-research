@@ -5,27 +5,32 @@
 
 ## Problem and setting
 
-## Proposal / hypothesis
+Describe the task, specific difficulty, and practical consequence. Explain what known approaches leave unresolved, with supporting sources or observations.
 
-## Rationale
+## Proposed method
 
-Explain the intuition or practical reason the idea could help.
+Describe inputs, outputs, and key steps. Define the central operation or objective; identify any unresolved design choice.
 
-## Expected outcomes
+## Design rationale
 
-| Expected outcome | Measurement | Setting / baseline |
-|---|---|---|
+Connect each key design choice to the difficulty it addresses and explain why it could help.
 
-## First test
+## Worked example
 
-State the comparison and how its outcomes guide the next step.
+Trace a small instance through the current approach and the proposal. Label constructed illustrations separately from observed failures.
 
-## Potential contribution
+## Closest known work and difference
 
-## Relevant evidence or prior work
+Explain shared components, the actual difference, and why it matters. Link sources and any focused novelty audit.
 
-Separate existing observations from proposed results.
+## Expected outcome and contribution
 
-## Optional analysis
+State the useful change in task behavior or understanding that success would add. Separate expected outcomes from observed results.
 
-Include only what the contribution or next decision needs: mechanism, assumptions, competing explanations, falsification conditions, boundaries, or unresolved issues. A theoretical contribution should state its proposition and proof approach.
+## Basic feasibility and next design question
+
+Identify essential resources or access and the next issue to resolve in the problem or method.
+
+## Optional follow-on analysis
+
+Include mechanism, assumptions, competing explanations, or theory when they carry the contribution. Link a separate experiment plan when validation is requested or underway.

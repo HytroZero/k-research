@@ -8,17 +8,20 @@ disable-model-invocation: true
 
 Help the researcher choose where to start and what to do next. Read the relevant skill's `SKILL.md` before describing its behavior or recommending that a step be skipped. The map below is for orientation; each skill owns its detailed procedure.
 
-## Main flow: direction to first experiment
+## Main flow: problem to proposed method
 
 1. **`collect-paper`** takes a broad topic and builds a screened paper collection, an index, BibTeX, and key local PDFs. Start here when the researcher needs reading material.
 2. **`paper-analysis`** reads individual papers; **`field-synthesis`** connects their methods and findings into a field map. Use the former for a particular paper and the latter for a body of work.
 3. **`opportunity-discovery`** identifies worthwhile problems and possible approaches from the literature, observations, or task needs.
-4. **`hypothesis-development`** turns an opportunity into a concrete proposal with a rationale, expected outcome, and practical first comparison. Empirical ideas can advance without a complete mechanism explanation or formal proof.
-5. **`novelty-audit`** compares developed candidates with their closest prior work and clarifies the actual difference.
-6. **`decisive-test-design`** plans the smallest informative experiment or analysis for the strongest candidates, addressing concrete issues that affect interpretation. Hand the plan to an execution agent to implement and run it.
-7. **`belief-update`** incorporates returned results or new papers and revisits the research decision. Continue with a revised idea, a targeted literature check, or a follow-up test according to what changed.
+4. **`hypothesis-development`** develops the problem, concrete method, design rationale, and worked example, comparing known approaches throughout. The default deliverable explains the potential contribution and basic feasibility.
+5. **`novelty-audit`** verifies mature candidates against their closest prior work, building on the literature comparisons used to define the problem and method. Recommend a direction once the problem, solution, and difference are clear.
 
-For an end-to-end investigation, recommend **`discover-research-direction`**. It coordinates collection, understanding, candidate development, comparison, focused risk checks, and a Research Brief. It is a separate user-invoked workflow: give the researcher the invocation rather than starting it from this router.
+## Follow-on work
+
+- **`decisive-test-design`** plans the smallest informative experiment or analysis when the user requests experiments or a full research plan, or work has advanced to validating a developed method. Keep detailed experiment design in a separate plan. Hand the plan to an execution agent to implement and run it.
+- **`belief-update`** incorporates returned results or new papers and revisits the research decision. Continue with a revised idea, a targeted literature check, or a follow-up test according to what changed.
+
+For an end-to-end investigation, recommend **`discover-research-direction`**. It coordinates collection, problem definition, method development, closest-work verification, and a Research Brief. Its default endpoint is a problem-and-method recommendation; experiment planning is a follow-on branch. It is a separate user-invoked workflow: give the researcher the invocation rather than starting it from this router.
 
 ## Enter where the work is
 
@@ -28,7 +31,7 @@ For an end-to-end investigation, recommend **`discover-research-direction`**. It
 | One paper to understand | `paper-analysis` |
 | Papers collected, relationships unclear | `field-synthesis` |
 | Familiar with the field, looking for useful problems | `opportunity-discovery` |
-| An idea that needs a concrete method and testable outcome | `hypothesis-development` |
+| An idea that needs a concrete method and design rationale | `hypothesis-development` |
 | A developed idea that may overlap existing work | `novelty-audit` |
 | A candidate ready for an initial experiment | `decisive-test-design` |
 | New experimental results, papers, or counterexamples | `belief-update` |

@@ -48,7 +48,7 @@ Use explicit status labels:
 
 A skill must not upgrade `indirect`, `secondary`, or `unverified` evidence to `direct` without checking the primary source.
 
-Hypothesis records require `rationale` and at least one observable prediction. Use `first_test` for the initial comparison. When updating an older record, add a rationale from the documented idea and preserve the prior version.
+Hypothesis records require `rationale` and at least one observable prediction. The observable describes the expected task behavior; it need not specify a measurement protocol. `first_test` is optional and is populated when experiment planning begins. When updating an older record, add a rationale from the documented idea and preserve the prior version.
 
 ## Hypothesis lifecycle
 

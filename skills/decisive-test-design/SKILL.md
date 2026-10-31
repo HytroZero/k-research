@@ -5,7 +5,9 @@ description: Design the smallest informative experiment or analysis for a resear
 
 # Decisive Test Design
 
-Design a test that helps decide whether to continue, revise, or stop investing in an idea.
+Design a test that helps decide whether to continue, revise, or stop investing in an idea. Use this stage when experiments or a full research plan are requested, or when work has advanced to validating a developed method.
+
+Start from the problem, method, and expected contribution. If a central method operation is still undefined, resolve it with `hypothesis-development` before specifying its validation. A diagnostic experiment can address an open problem question when that is the requested task.
 
 ## Process
 
@@ -20,7 +22,7 @@ Design a test that helps decide whether to continue, revise, or stop investing i
 
 Provide the decision question, expected outcome, test setup, baseline and necessary controls, measurements, and a result-to-decision table. Include a prediction matrix only when comparing explanations. Record unresolved issues only if they affect interpretation or the next action.
 
-The execution handoff should contain enough detail to implement the first test, including data, configurations, and outputs to record. Report this as a planned experiment.
+The execution handoff should contain enough detail to implement the first test, including data, configurations, and outputs to record. Report this as a planned experiment in a separate artifact linked from the Research Brief.
 
 ## Completion criterion
 

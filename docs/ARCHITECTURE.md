@@ -2,7 +2,7 @@
 
 ## Product boundary
 
-Easy AI Research is a **scientific reasoning layer**. Its job is to help a researcher understand a field, identify worthwhile questions, develop testable hypotheses, assess novelty, expose weaknesses, and update decisions when evidence changes.
+Easy AI Research is a **scientific reasoning layer**. Its job is to help a researcher understand a field, identify worthwhile questions, develop concrete methods grounded in those questions, assess novelty, expose weaknesses, and update decisions when evidence changes.
 
 It does not own:
 - code implementation or experiment execution;
@@ -42,7 +42,7 @@ Human
           +--> hypothesis-development
           +--> novelty-audit
           +--> red-team (optional, for requested review or a concrete concern)
-          +--> decisive-test-design
+          +--> decisive-test-design (follow-on, for experiment planning)
           +--> belief-update
 
 Any agent may independently invoke a model-invoked skill when its trigger fits.
@@ -53,13 +53,12 @@ A user-invoked skill must not invoke another user-invoked skill. The router can 
 ## Main research loop
 
 1. Collect and index an initial corpus with BibTeX and key PDFs, then build a field model.
-2. Find useful problems and opportunities from literature, observations, or task needs.
-3. Develop concrete ideas with a rationale and expected observable outcomes.
-4. Compare developed candidates against the closest prior work.
-5. Identify decision-relevant risks in the most promising candidates; use full red-team review on demand.
-6. Design the smallest informative experiment or analysis.
-7. Select, revise, defer, or reject the direction.
-8. When new evidence arrives, update the state and revisit affected decisions.
+2. Define useful problems: the setting, specific difficulty, practical consequence, and why existing approaches leave it unresolved.
+3. Develop concrete methods with design choices tied to those difficulties; explain their operation through a worked example and compare known neighbors during development.
+4. Verify mature candidates against the closest prior work through a focused novelty audit.
+5. Recommend pursuing, refining, deferring, or rejecting the direction based on problem value, method fit, substantive difference, and basic feasibility. Deliver the Research Brief here by default.
+6. When experiments or a full plan are requested, or a method enters validation, design the smallest informative experiment in a separate plan. Use full red-team review on demand.
+7. When new evidence arrives, update the state and revisit affected decisions.
 
 The loop can stop at any stage. The process should preserve useful negative findings and rejected hypotheses.
 

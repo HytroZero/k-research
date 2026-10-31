@@ -1,155 +1,57 @@
-# K Research Skills
+# K Research
 
-A composable skill suite for scientific research reasoning: understanding a field, finding research opportunities, developing testable ideas, comparing prior work, reviewing key risks, designing informative tests, and updating beliefs from new evidence.
+**Define a research problem. Find a way to solve it.**
 
-**Product boundary:** this suite owns research intelligence and research decisions. It does not implement experiments, SSH/GPU orchestration, budget management, or manuscript writing. Those jobs belong to execution and writing agents that consume the research artifacts produced here.
+[中文](README.zh-CN.md)
 
-## Design principles
+11 composable agent skills for collecting papers, understanding a field, developing research ideas, checking novelty, and planning informative experiments.
 
-- **Small and composable:** each model-invoked skill owns one research discipline.
-- **Explicit process:** skills define steps, evidence requirements, decision gates, and completion criteria.
-- **Progressive disclosure:** `SKILL.md` contains the procedure; deeper frameworks live in `docs/references/`.
-- **Persistent research state:** papers, claims, evidence, hypotheses, and decisions are structured artifacts with stable IDs.
-- **Evidence before confidence:** conclusions distinguish direct evidence, inference, absence of evidence, and unknowns.
-- **Exploration first:** develop candidates from worthwhile problems, reasonable intuition, and feasible tests.
-- **Evidence matched to contribution:** empirical ideas can advance without a formal proof or complete mechanism explanation.
-- **Focused review:** compare closest work, then resolve risks that affect the next experiment. Full red-team review is available on demand.
+## Setup
 
-The suite is inspired by the small, composable, user-invoked/model-invoked design in Matt Pocock's `mattpocock/skills`. It is an independent research-focused implementation, not a copy of that repository.
+### Add the marketplace in the Codex GUI
 
-## Skill catalogue
+1. Open **Plugins** in the Codex desktop app.
+2. Choose **Add marketplace** and enter `HytroZero/k-research`.
+3. Confirm to add the marketplace.
 
-### User-invoked skills
+### Use with another agent
 
-| Skill | Use |
-|---|---|
-| `ask-k` | Navigation entry. Recommends a skill or workflow; starts a focused skill when explicitly asked. |
-| `discover-research-direction` | Orchestrates the complete path from field understanding to a promising direction with a practical first test. |
+Download the full repository and keep its directory structure intact. Skills use shared files in `docs/`, `templates/`, and `schemas/`.
 
-User-invoked skills are marked with `disable-model-invocation: true` and `policy.allow_implicit_invocation: false` for Codex. A user-invoked skill may call model-invoked skills, but it must not invoke another user-invoked skill.
+Ask your agent to read and follow `skills/<skill-name>/SKILL.md`, using this repository as the root for shared file paths. No separate installation is needed for this workflow.
 
-### Model-invoked skills
+## Use
 
-| Skill | Use |
-|---|---|
-| `collect-paper` | Collects relevant papers from leading venues or recognized organizations, key PDFs, and an index with BibTeX. |
-| `paper-analysis` | Extracts a paper's question, contribution, mechanism, assumptions, claims, evidence, and limitations. |
-| `field-synthesis` | Synthesizes a body of papers into a structured map of methods, claims, debates, and boundaries. |
-| `opportunity-discovery` | Finds research opportunities grounded in tensions, failures, assumptions, and unresolved questions. |
-| `hypothesis-development` | Develops a concrete proposal, rationale, expected outcome, and first test. |
-| `novelty-audit` | Tests whether the proposed contribution is substantively distinct from the closest prior work. |
-| `red-team` | Provides a full adversarial review when requested or needed for a concrete concern. |
-| `decisive-test-design` | Designs the smallest informative comparison or test of explanations. |
-| `belief-update` | Updates the research state when new papers, results, or counterevidence arrive. |
-
-Model-invoked skills can be called directly by the user or discovered by an agent from their descriptions.
-
-## Recommended workflow
+Replace `<repo>` with the local repository path:
 
 ```text
-/ask-k
-   |
-   +-- collect papers for a topic ----> collect-paper
-   |
-   +-- one paper ----------------------> paper-analysis
-   |
-   +-- map a field --------------------> field-synthesis
-   |
-   +-- find a research opportunity ----> opportunity-discovery
-   |
-   +-- deepen an idea -----------------> hypothesis-development
-   |
-   +-- check novelty ------------------> novelty-audit
-   |
-   +-- challenge an idea --------------> red-team
-   |
-   +-- design a discriminating test ---> decisive-test-design
-   |
-   +-- incorporate new evidence -------> belief-update
-
-/discover-research-direction
-   |
-   +--> collect-paper (build or refresh initial corpus)
-   +--> paper-analysis
-   +--> field-synthesis
-   +--> opportunity-discovery
-   +--> hypothesis-development
-   +--> novelty-audit
-   +--> focused risk check (full red-team review on demand)
-   +--> decisive-test-design
-   +--> Research Brief + decision record
+Read <repo>/skills/ask-k/SKILL.md and help me choose where to start
+with research on efficient long-context inference.
 ```
-
-Develop candidates before judging them. Compare the closest work, then plan a first test for the strongest ideas. Simple modifications and combinations are assessed by their value and empirical differences.
-
-## Repository layout
 
 ```text
-easy-ai-research-skills/
-├── README.md
-├── GLOSSARY.md
-├── skills/
-│   ├── ask-k/
-│   ├── discover-research-direction/
-│   ├── collect-paper/
-│   ├── paper-analysis/
-│   ├── field-synthesis/
-│   ├── opportunity-discovery/
-│   ├── hypothesis-development/
-│   ├── novelty-audit/
-│   ├── red-team/
-│   ├── decisive-test-design/
-│   └── belief-update/
-├── docs/
-│   ├── ARCHITECTURE.md
-│   ├── RESEARCH-STATE.md
-│   ├── MCP-CONTRACT.md
-│   ├── EVALUATION.md
-│   └── references/
-├── schemas/
-├── templates/
-└── examples/
+Read <repo>/skills/discover-research-direction/SKILL.md and follow it
+to explore research directions in efficient long-context inference.
 ```
 
-## Installation
+You can also use any [individual skill](skills/) directly. Direction discovery centers on the problem, proposed method, and difference from prior work. Detailed experiment design follows when experiments or a full research plan are requested, or a developed method is ready for validation. Outputs include paper notes, literature maps, research proposals, and separate experiment plans.
 
-Install the **whole suite** when possible. Several skills point to shared reference documents under `docs/references/`; installing isolated skill folders without those references reduces their effectiveness.
+## Skills
 
-### Claude Code
+| Skill | Description |
+|---|---|
+| [ask-k](skills/ask-k/SKILL.md) | Choose the right skill or short workflow for your current research stage, with a ready-to-use invocation. |
+| [discover-research-direction](skills/discover-research-direction/SKILL.md) | Develop worthwhile problems and concrete methods, verify their differences from closest work, and recommend a research direction. |
+| [collect-paper](skills/collect-paper/SKILL.md) | Build a screened paper collection for a topic, verify sources, download key PDFs, and save an index and BibTeX bibliography. |
+| [paper-analysis](skills/paper-analysis/SKILL.md) | Read an individual paper to explain its question, method, claims, evidence, and limitations, with source locators. |
+| [field-synthesis](skills/field-synthesis/SKILL.md) | Connect a body of papers into a field map covering research lines, method evolution, agreements, disagreements, and open questions. |
+| [opportunity-discovery](skills/opportunity-discovery/SKILL.md) | Find worthwhile research problems and possible approaches from practical bottlenecks, desired capabilities, observations, and unresolved questions. |
+| [hypothesis-development](skills/hypothesis-development/SKILL.md) | Develop a concrete method with a problem-grounded rationale, worked example, closest-work comparison, and expected contribution. |
+| [novelty-audit](skills/novelty-audit/SKILL.md) | Search and inspect the closest prior work to assess overlap, identify substantive differences, and support a novelty judgment. |
+| [decisive-test-design](skills/decisive-test-design/SKILL.md) | Plan the smallest informative experiment or analysis, specifying comparisons, measurements, and how results guide the next decision; hand the plan to an execution agent. |
+| [belief-update](skills/belief-update/SKILL.md) | Incorporate new papers or results into hypotheses and research decisions, recording the evidence and preserving decision history. |
+| [red-team](skills/red-team/SKILL.md) | Conduct an optional adversarial review of a developed idea, prioritize consequential objections, and propose concrete probes to resolve them. |
 
-Copy the `skills/` directories into the project's `.claude/skills/` directory, preserving each skill folder.
+## Documentation
 
-### Codex
-
-Copy the `skills/` directories into the project's `.agents/skills/` directory, preserving each skill folder and its `agents/openai.yaml` metadata.
-
-### Other agents
-
-Use the agent's supported Agent Skills directory or the `skills` CLI. When publishing this repository to GitHub, it can be installed through the Skills ecosystem using the repository identifier. Check the target host's current skill-discovery and invocation rules.
-
-The suite uses standard `SKILL.md` frontmatter plus Codex metadata. Some hosts may ignore `disable-model-invocation`; on those hosts, keep the two user-invoked skills out of automatic discovery or configure their equivalent manual-only policy.
-
-## How to use
-
-- Use `collect-paper` with a broad topic to create `papers/index.md`, `papers/references.bib`, a search log, and key PDFs. Sources must qualify through a leading conference or a recognized team, university, or company; eligible preprints are included.
-- Start with `/ask-k` when you are unsure which research operation is appropriate.
-- Start with `/discover-research-direction` when you want a complete, guided exploration.
-- Invoke model skills directly when you already know the task, for example `novelty-audit` on an existing idea.
-- Give skills a project directory containing the research artifacts, or ask them to produce a self-contained Markdown result when no persistent workspace exists.
-- Ask the agent to preserve source URLs, DOI/arXiv identifiers, page/section/figure/table locators, and retrieval dates.
-
-## Shared research state
-
-The canonical artifact definitions are in `docs/RESEARCH-STATE.md` and `schemas/`. The templates under `templates/` are human-readable renderings of those artifacts.
-
-Research history should be append-only: new evidence and decisions create new records or superseding versions. Do not silently rewrite a past decision. This makes the evolution of a research direction inspectable.
-
-## MCP integration
-
-The skills do not assume a particular MCP implementation. See [`docs/MCP-CONTRACT.md`](docs/MCP-CONTRACT.md) for a minimal tool/resource contract. The MCP layer should provide paper retrieval and persistent research-state operations. It should not grow into an experiment runner or manuscript-generation platform.
-
-## Research quality
-
-Use source-backed comparisons, relevant baselines, and tests that inform the next decision. Theory and mechanism analysis follow the contribution type; uncertainty belongs in the output when it changes an action or interpretation.
-
-See [`docs/EVALUATION.md`](docs/EVALUATION.md) for the proposed evaluation protocol.
+[Architecture](docs/ARCHITECTURE.md) · [Research state](docs/RESEARCH-STATE.md) · [Examples](examples/)

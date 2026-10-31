@@ -1,67 +1,58 @@
 ---
 name: discover-research-direction
-description: Develop promising research ideas, compare closest prior work, and select a direction with a practical first test.
+description: Develop a worthwhile research problem and a concrete method, grounded in prior work, then recommend a direction.
 disable-model-invocation: true
 ---
 
 # Discover Research Direction
 
-Turn a research area into promising candidates and an actionable recommendation. Develop ideas before subjecting the strongest candidates to focused checks.
+Turn a research area into a well-motivated problem and a concrete proposed solution. The default deliverable is a Research Brief centered on the problem, method, and substantive difference from prior work.
 
 ## Operating stance
 
 - Read `GLOSSARY.md` and existing project artifacts; reuse relevant literature and decisions.
 - Perform factual investigation with available sources and tools. Ask the researcher for priorities and trade-offs that cannot be inferred.
 - Invoke the relevant model-invoked skills through the host's Skill mechanism, or read their `SKILL.md` when that mechanism is unavailable.
-- Use `docs/references/SCIENTIFIC-CLAIMS.md` to match evidence requirements to contribution type and research stage.
-- Preserve source provenance and decision history. Report unknowns when they affect the recommendation or next action.
+- Preserve source provenance and decision history. Use `docs/references/SCIENTIFIC-CLAIMS.md` to distinguish proposed contributions from established results.
 
-## 1. Frame and orient
+## 1. Understand the setting and existing approaches
 
-Establish the target problem, community, intended contribution, available resources, and existing corpus. If the scope is too broad for useful investigation, propose a focused scope to the researcher.
+Establish the target task, community, resources, and existing corpus. If the scope is too broad, propose a focused scope.
 
-Use `collect-paper` to build or refresh the initial corpus from the broad direction, saving a paper index, BibTeX, and accessible key PDFs. Reuse an adequate existing collection.
+Use `collect-paper` to build or refresh the corpus, then `paper-analysis` and `field-synthesis` to understand representative approaches. Follow how each approach addresses the task and which limitations remain. Expand retrieval as specific problems and design choices emerge.
 
-Use `paper-analysis` and `field-synthesis` to understand representative approaches and relevant bottlenecks. Build enough context to generate concrete ideas; expand the literature pass as candidates reveal specific questions.
+**Ready to proceed:** the task, current approaches, and relevant constraints are concrete enough to identify useful problems.
 
-**Ready to proceed:** the scope, relevant approaches, and practical constraints are clear enough to identify useful problems.
+## 2. Define worthwhile problems
 
-## 2. Develop candidates
+Use `opportunity-discovery`. For each promising problem, describe the setting, the specific difficulty, its practical consequence, and why known approaches leave it unresolved. Ground the limitation in sources, observations, or explicit task requirements. An illustrative example can explain a difficulty; label it as illustrative when it is not an observed failure.
 
-Use `opportunity-discovery`, then `hypothesis-development`. Explore improvements in capability, efficiency, reliability, evaluation, or understanding, including simple modifications and combinations of existing methods.
+**Ready to proceed:** the reader can explain what needs solving and why it matters, independently of a proposed method or benchmark.
 
-For each candidate, state:
-- the problem and why it matters;
-- the proposed method or intervention;
-- the intuition for why it could help;
-- the expected observable outcome;
-- a feasible first comparison;
-- the potential contribution.
+## 3. Develop methods against those difficulties
 
-**Ready to proceed:** candidates have a worthwhile problem, reasonable rationale, and a practical test. Mechanism explanations and formal theory are developed when they are part of the intended contribution.
+Use `hypothesis-development`. Explain the proposed method's inputs, key steps, and outputs, and connect its design choices to the difficulties identified above. Carry a small example through the current approach and the proposed solution. Compare known neighboring methods during development; revise designs when a neighbor already supplies the proposed solution.
 
-## 3. Compare closest work
+**Ready to proceed:** each developed candidate has a specific problem, an understandable method, a rationale connecting the two, and a useful expected contribution. Basic resource feasibility is enough here; a detailed experiment plan is not a readiness gate.
 
-Use `novelty-audit` on the developed candidates worth advancing. Inspect the closest methods and results, including work that may already solve the problem. State the actual difference and why it matters.
+## 4. Check the strongest candidates against closest work
 
-**Ready to proceed:** the closest-work comparison supports a decision to test, revise, or set aside each shortlisted candidate. If retrieval leaves a material question open, record the specific missing comparison and decide whether to retrieve it first or proceed with a cheap exploratory test.
+Use `novelty-audit` for focused verification of mature candidates. Build on the comparisons made during problem and method development. State the actual difference and why it matters; use overlap findings to refine or set aside candidates.
 
-## 4. Resolve key risks and design the first test
+Use `red-team` when requested or when a concrete unresolved concern warrants deeper investigation.
 
-For the most promising candidates, identify concrete issues that could remove the contribution's value or make the experiment uninterpretable. Examples include prior work implementing the same idea, extra compute explaining the gain, leakage, or unavailable data.
-
-Use `decisive-test-design` to specify the smallest informative experiment or analysis, relevant baseline, measurements, and result-to-decision rules. A fair empirical comparison can justify the next step without resolving the full mechanism.
-
-Use `red-team` for a full adversarial review when the user requests it or a specific unresolved concern warrants deeper investigation. It is an optional branch, not a required gate for every idea.
-
-**Ready to proceed:** the first test can guide further investment, and any issue that blocks its usefulness has a concrete resolution or next action.
+**Ready to proceed:** the closest-work comparison supports a recommendation, and any unresolved question that changes it has a specific next action.
 
 ## 5. Recommend and record
 
-Compare candidates using `docs/references/DECISION-RUBRIC.md`. Present the recommended direction, why it is worth trying, its difference from closest work, and the first test. Include risks only where they affect the choice or test design. Record why alternatives were revised, deferred, or rejected.
+Compare candidates using `docs/references/DECISION-RUBRIC.md`. Produce `templates/research-brief.md` and `templates/decision-record.md`. Give the problem and method the explanatory detail needed to judge the direction; integrate prior work where it motivates the problem or a design choice. Record why alternatives were revised, deferred, or rejected.
 
-Ask the researcher to choose when priorities or resource trade-offs require their judgment. Produce `templates/research-brief.md` and `templates/decision-record.md`; omit optional sections that add no decision value. Persist artifacts and append a history event if the research-state interface is available.
+Ask the researcher to choose when priorities or resource trade-offs require their judgment. Persist artifacts and append a history event if the research-state interface is available.
+
+## Follow-on: experiment planning
+
+Use `decisive-test-design` when the user requests experiments or a full research plan, or the task has advanced to validating a developed method. Put detailed baselines, controls, metrics, and execution instructions in a separate experiment plan and link it from the brief. An explicit experimental request should continue through this stage without an extra approval step.
 
 ## Completion criterion
 
-The researcher can see what to try, why it matters, how it differs from closest work, and which initial result would justify continuing or revising it. Test execution is handed off to an execution agent.
+The researcher can explain the problem, how the method addresses it, why the design could work, and what it adds to the closest work. The recommendation and next action follow from that account. Default direction discovery is complete without a detailed experiment plan.

@@ -1,0 +1,10 @@
+{
+  "name": "k-research",
+  "version": "0.1.0",
+  "description": "Composable skills for scientific research reasoning and paper collection.",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "K Research",
+    "shortDescription": "Collect papers and develop research directions"
+  }
+}

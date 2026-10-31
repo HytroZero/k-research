@@ -1,0 +1,27 @@
+# Local examples and research outputs
+examples/**
+
+# macOS metadata
+.DS_Store
+._*
+
+# Editor and temporary files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Local secrets
+.env
+.env.*
+!.env.example

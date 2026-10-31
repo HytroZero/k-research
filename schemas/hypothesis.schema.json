@@ -98,7 +98,7 @@
     },
     "first_test": {
       "type": "string",
-      "description": "Initial comparison and how its outcomes guide further work."
+      "description": "Optional initial comparison, populated when experiment planning begins."
     }
   }
 }
