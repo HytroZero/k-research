@@ -55,3 +55,7 @@
 ## 文档
 
 [架构](docs/ARCHITECTURE.md) · [研究状态](docs/RESEARCH-STATE.md) · [示例](examples/)
+
+## 许可证
+
+[MIT](LICENSE) © 2026 HytroZero。

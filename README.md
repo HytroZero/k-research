@@ -55,3 +55,7 @@ You can also use any [individual skill](skills/) directly. Direction discovery c
 ## Documentation
 
 [Architecture](docs/ARCHITECTURE.md) · [Research state](docs/RESEARCH-STATE.md) · [Examples](examples/)
+
+## License
+
+[MIT](LICENSE) © 2026 HytroZero.

@@ -1,7 +1,14 @@
-47 authored files
+54 authored files
 
+.agents/plugins/marketplace.json
+.codex-plugin/plugin.json
+.gitattributes
+.gitignore
 GLOSSARY.md
+LICENSE
+MANIFEST.txt
 README.md
+README.zh-CN.md
 docs/ARCHITECTURE.md
 docs/EVALUATION.md
 docs/MCP-CONTRACT.md
