@@ -44,6 +44,19 @@ Check these cases alongside literature accuracy:
 - An undefined central score or operation: identify the missing method design rather than compensate with detailed baselines.
 - A cheap experiment attached to a weak problem: prioritize problem value and method fit over experimental convenience.
 
+## Method review cases
+
+- Early brainstorming: develop solution angles without dispatching reviewers for every sketch.
+- Standalone method development and end-to-end discovery: selected methods receive two independent parallel reviewers on the same proposal, followed by parent integration; discovery does not duplicate the cycle.
+- Unsupported reviewer objection or disagreement: the parent weighs sources and reasoning and explains consequential accepted and rejected objections, without treating review labels as vetoes.
+- Substantial redesign: run at most one targeted follow-up, keep the worked example and contribution consistent, and distinguish reviewed claims from new unresolved claims.
+- No viable method remains: defer, reject, or reframe based on evidence rather than forcing a recommendation or adding decorative components.
+- No subagent support or a failed reviewer: complete the two disciplines with the documented fallback and disclose the actual review mode.
+- Missing literature access: preserve uncertainty and search boundaries rather than claiming novelty from an incomplete search.
+- User-requested skip: honor it and identify the review as skipped.
+- Method-stage review without an experiment plan: examine rationale and feasibility without requiring a new plan or completed experiments.
+- Parallel reviewers: return findings without shared-file writes or recursive delegation; the parent integrates them into existing documents.
+
 ## Project layout cases
 
 Evaluate persisted outputs against [Project Layout](PROJECT-LAYOUT.md):
@@ -69,7 +82,7 @@ Reviewers should answer:
 4. Did the system find the closest prior work?
 5. Is the claimed novelty substantive?
 6. Does the method address the stated difficulty, and can its steps be followed through the example?
-7. Did the review identify concrete issues that affect the decision, with full red-team review reserved for cases that need it?
+7. Did the review identify concrete issues that affect the decision, with both review disciplines integrated before recommending a concrete method?
 8. Would the output change a researcher's decision?
 9. When an experiment plan was requested, would it usefully inform whether to continue or revise?
 

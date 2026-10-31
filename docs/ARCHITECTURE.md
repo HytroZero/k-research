@@ -44,8 +44,8 @@ Human
           +--> field-synthesis
           +--> opportunity-discovery
           +--> hypothesis-development
-          +--> novelty-audit
-          +--> red-team (optional, for requested review or a concrete concern)
+          |       +--> red-team reviewer ───────┐
+          |       +--> novelty-audit reviewer ──┴--> parent revision
           +--> decisive-test-design (follow-on, for experiment planning)
           +--> belief-update
 
@@ -59,9 +59,9 @@ A user-invoked skill must not invoke another user-invoked skill. The router can 
 1. Collect and index an initial corpus with BibTeX and key PDFs, then build a field model.
 2. Define useful problems: the setting, specific difficulty or questioned assumption, consequence, and why existing approaches leave it open.
 3. Develop concrete methods from first principles with design choices tied to those difficulties; trace their operation through a worked example and then position them against known neighbors without adding defensive complexity.
-4. Verify mature candidates against the closest prior work through a focused novelty audit.
+4. For methods selected for recommendation, complete the parallel red-team and novelty-audit review followed by parent revision, as owned by `hypothesis-development`. Callers reuse that cycle; early sketches remain exploratory. That skill defines follow-up limits, user-requested skips, and the sequential fallback when subagents are unavailable.
 5. Recommend pursuing, refining, deferring, or rejecting the direction based on problem value, method fit, substantive difference, and basic feasibility. Deliver the Research Brief here by default.
-6. When experiments or a full plan are requested, or a method enters validation, design the smallest informative experiment in a separate plan. Use full red-team review on demand.
+6. When experiments or a full plan are requested, or a method enters validation, design the smallest informative experiment in a separate plan. Standalone focused reviews remain available on demand.
 7. When new evidence arrives, update the state and revisit affected decisions.
 
 The loop can stop at any stage. The process should preserve useful negative findings and rejected hypotheses.

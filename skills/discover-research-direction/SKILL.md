@@ -39,11 +39,9 @@ Use `hypothesis-development`. Start from first principles to design a clean, dir
 
 **Ready to proceed:** each developed candidate has a specific problem, an understandable method, a rationale connecting the two, and a useful expected contribution. Basic resource feasibility is enough here; a detailed experiment plan is not a readiness gate.
 
-## 4. Check the strongest candidates against closest work
+## 4. Integrate review of the strongest candidates
 
-Use `novelty-audit` for focused verification of mature candidates. Build on the comparisons made during problem and method development. State the actual difference and why it matters; use overlap findings to refine or set aside candidates.
-
-Use `red-team` when requested or when a concrete unresolved concern warrants deeper investigation.
+For candidates selected for recommendation, complete the review-and-revision cycle owned by `hypothesis-development`: parallel red-team and novelty-audit subagents followed by parent revision. Reuse reviews already completed during method development; do not launch a duplicate cycle here. Compare the revised candidates and use the supported findings to refine, defer, or set aside candidates.
 
 **Ready to proceed:** the closest-work comparison supports a recommendation, and any unresolved question that changes it has a specific next action.
 

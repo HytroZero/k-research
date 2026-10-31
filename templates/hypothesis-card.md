@@ -15,7 +15,7 @@ Describe inputs, outputs, and key steps. Define the central operation or objecti
 
 ## Design rationale
 
-Connect each key design choice to the difficulty it addresses and explain why it should help.
+Connect each key design choice to the difficulty it addresses and explain why it should help. After review, explain consequential revisions and the reasons for retaining choices challenged by important objections.
 
 ## Worked example
 
@@ -31,7 +31,7 @@ State the useful change in task behavior, efficiency, simplification, or underst
 
 ## Basic feasibility and next design question
 
-Identify essential resources or access and the next issue to resolve in the problem or method.
+Identify essential resources or access and the next issue to resolve in the problem or method. For reviewed candidates, note the review mode and remaining consequential objections; disclose any skipped or incomplete review.
 
 ## Optional follow-on analysis
 

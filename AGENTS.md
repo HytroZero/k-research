@@ -10,7 +10,7 @@ K Research is a collection of composable research skills. It helps researchers f
 - Let ideas develop before filtering them by literature overlap. Use prior work to inform and position ideas; avoid adding components solely to manufacture novelty.
 - Judge simple methods, combinations, and complex methods by their useful contribution. Simplicity is valuable when it serves the problem, not a mandatory aesthetic.
 - Keep factual grounding separate from creative exploration. Claims about existing work and observed results need evidence; proposed ideas can begin with intuitions, analogies, or questioned assumptions.
-- Default direction discovery ends with a problem-and-method recommendation. Detailed experiment planning is follow-on work; full adversarial review is optional. Preserve explicit requests for a complete research plan.
+- Default direction discovery ends with a problem-and-method recommendation. Methods selected for recommendation receive the review-and-revision cycle owned by `hypothesis-development`. Detailed experiment planning is follow-on work. Preserve explicit requests for a complete research plan.
 - Add a constraint only when it addresses a concrete failure and belongs at that research stage. Prefer removing unnecessary instructions to accumulating gates, disclaimers, and output fields.
 
 ## Editing skills and documentation

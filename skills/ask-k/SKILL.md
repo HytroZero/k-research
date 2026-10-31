@@ -17,8 +17,8 @@ Before writing project files, read [Project Layout](../../docs/PROJECT-LAYOUT.md
 1. **`collect-paper`** takes a broad topic and builds a screened paper collection, an index, BibTeX, and key local PDFs. Start here when the researcher needs reading material.
 2. **`paper-analysis`** reads individual papers; **`field-synthesis`** connects their methods and findings into a field map. Use the former for a particular paper and the latter for a body of work.
 3. **`opportunity-discovery`** identifies worthwhile problems and possible approaches from the literature, observations, or task needs.
-4. **`hypothesis-development`** develops the problem, concrete method, design rationale, and worked example, comparing known approaches throughout. The default deliverable explains the potential contribution and basic feasibility.
-5. **`novelty-audit`** verifies mature candidates against their closest prior work, building on the literature comparisons used to define the problem and method. Recommend a direction once the problem, solution, and difference are clear.
+4. **`hypothesis-development`** develops the problem, concrete method, design rationale, and worked example, comparing known approaches throughout. Before recommending a method, it runs red-team and novelty-audit reviewers and integrates their findings into the method. The default deliverable explains the revised method, potential contribution, and basic feasibility.
+5. **`novelty-audit`** can also independently verify mature candidates against their closest prior work, building on the literature comparisons used to define the problem and method. Recommend a direction once the problem, solution, and difference are clear.
 
 ## Follow-on work
 
@@ -42,7 +42,7 @@ For an end-to-end investigation, recommend **`discover-research-direction`**. It
 | A requested adversarial review or a specific concern needing deeper scrutiny | `red-team` |
 | A full investigation from a research area to a selected direction | `discover-research-direction` |
 
-Reuse existing artifacts and enter at the relevant stage. Full `red-team` review is optional; ordinary candidate development does not require it. Experiment execution and manuscript writing are handed to the researcher's chosen execution or writing agent.
+Reuse existing artifacts and enter at the relevant stage. `hypothesis-development` owns the default dual-review cycle for methods selected for recommendation; reuse its results. Standalone `red-team` and `novelty-audit` remain available for focused reviews. Experiment execution and manuscript writing are handed to the researcher's chosen execution or writing agent.
 
 ## Choose and respond
 

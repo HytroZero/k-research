@@ -36,6 +36,8 @@ to explore research directions in efficient long-context inference.
 
 You can also use any [individual skill](skills/) directly. Direction discovery centers on the problem, proposed method, and difference from prior work. Detailed experiment design follows when experiments or a full research plan are requested, or a developed method is ready for validation. Outputs include paper notes, literature maps, research proposals, and separate experiment plans.
 
+Methods selected for recommendation receive parallel red-team and novelty-audit subagent reviews, followed by revision by the main agent. This applies to standalone method development and direction discovery. Review normally runs once, with at most one targeted follow-up after a substantial change. Users can request a skip; hosts without subagents perform sequential reviews and disclose that fallback.
+
 ## Research project files
 
 Research outputs use one [standard layout](docs/PROJECT-LAYOUT.md): `README.md` is the human entry point, `research/` holds the overview and direction proposals, and `papers/` holds the complete index, bibliography, notes, and PDFs. Agent-only state, cache, and temporary work stay in `.research/`.
@@ -56,7 +58,7 @@ Skills update current documents rather than saving a report per run. Files are c
 | [novelty-audit](skills/novelty-audit/SKILL.md) | Search and inspect the closest prior work to assess overlap, identify substantive differences, and support a novelty judgment. |
 | [decisive-test-design](skills/decisive-test-design/SKILL.md) | Plan the smallest informative experiment or analysis, specifying comparisons, measurements, and how results guide the next decision; hand the plan to an execution agent. |
 | [belief-update](skills/belief-update/SKILL.md) | Incorporate new papers or results into hypotheses and research decisions, recording the evidence and preserving decision history. |
-| [red-team](skills/red-team/SKILL.md) | Conduct an optional adversarial review of a developed idea, prioritize consequential objections, and propose concrete probes to resolve them. |
+| [red-team](skills/red-team/SKILL.md) | Conduct an adversarial review of a developed idea, prioritize consequential objections, and propose concrete probes to resolve them. |
 
 ## Documentation
 

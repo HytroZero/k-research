@@ -9,6 +9,8 @@ Determine whether the candidate makes a material contribution beyond the closest
 
 ## Project files
 
+When delegated as a reviewer by `hypothesis-development`, return findings to the parent without writing project files or invoking method development or further review agents. Report missing inputs for the parent to resolve. The parent owns integration. For standalone use, follow the destinations below.
+
 Before writing project files, read [Project Layout](../../docs/PROJECT-LAYOUT.md) and follow its destinations, update rules, and completion checks. Update `research/directions/<direction-name>/related-work.md` using the novelty-audit template, and update the proposal's summary of the difference.
 
 ## Process
