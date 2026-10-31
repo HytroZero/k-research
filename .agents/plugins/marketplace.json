@@ -1,7 +1,7 @@
 {
   "name": "k-research",
   "interface": {
-    "displayName": "K Research Local"
+    "displayName": "K Research"
   },
   "plugins": [
     {
