@@ -15,17 +15,18 @@ Novelty is multidimensional. Compare the proposed contribution against the close
 
 A contribution can be novel in one dimension and incremental in another. State exactly which dimension carries the contribution.
 
-## Combinations and simple changes
+## Combinations, simplifications, and small changes
 
-Judge a combination or small modification by its contribution. Useful outcomes include:
+Judge a combination, simplification, or small modification by its contribution. Useful outcomes include:
 - improved performance, efficiency, reliability, or usability under a meaningful comparison;
+- removes a widely assumed component or constraint while preserving or improving capability;
 - creates an emergent capability not present in the components separately;
 - reveals a new interaction or mechanism;
 - enables a decisive test of a previously unresolved question;
 - changes a meaningful theoretical or empirical conclusion;
 - establishes a new, generalizable boundary.
 
-State which problem the combination addresses, why it could help, and what would count as a useful result. Develop the candidate before evaluating it against closest work; theoretical novelty is one possible contribution type.
+State which problem the change addresses, why it could help, and what would count as a useful result. Conversely, bolt-on complexity added solely to differentiate a proposal from a close neighbor without serving the problem is not a substantive contribution. Develop the candidate before evaluating it against closest work; theoretical novelty is one possible contribution type.
 
 ## Comparison protocol
 

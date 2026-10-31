@@ -1,9 +1,10 @@
-54 authored files
+55 authored files
 
 .agents/plugins/marketplace.json
 .codex-plugin/plugin.json
 .gitattributes
 .gitignore
+AGENTS.md
 GLOSSARY.md
 LICENSE
 MANIFEST.txt

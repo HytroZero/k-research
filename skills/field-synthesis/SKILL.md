@@ -14,7 +14,7 @@ Build a structured model of a research field from a defined paper corpus. A fiel
 3. **Analyze representative papers.** Use `paper-analysis` for pivotal or disputed papers. Do not assume every paper needs equal depth.
 4. **Choose conceptual axes.** Organize the field by research question, mechanism, assumptions, method family, evaluation setting, or theoretical position. Chronology can supplement this structure but should not replace it.
 5. **Build the claim map.** Identify which papers support, contradict, qualify, extend, or do not address each major claim.
-6. **Trace evolution.** Explain how methods and explanations changed, what problem each line attempted to solve, and which assumptions persisted.
+6. **Trace evolution and shared premises.** Explain how methods and explanations changed, what problem each line attempted to solve, and which implicit assumptions persisted across competing lines.
 7. **Map boundaries and tensions.** Identify settings where conclusions differ, methods fail, metrics disagree, or evidence is underdetermined.
 8. **Separate field gaps from corpus gaps.** A missing topic in the collected papers may reflect incomplete retrieval. Call it a research gap only when the search boundary and evidence justify that interpretation.
 

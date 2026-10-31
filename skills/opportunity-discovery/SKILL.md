@@ -10,18 +10,22 @@ Identify problems worth solving and promising starting points for solutions.
 ## Process
 
 1. **Read the context.** Inspect the field map, relevant papers, project constraints, and prior decisions.
-2. **Locate a concrete difficulty.** Describe who or what performs the task, under which conditions, where current approaches fall short, and what consequence follows. Consider capability limits, expensive or fragile methods, measurement gaps, conflicting findings, and unexplained observations.
-3. **Ground the problem in existing work.** Explain how relevant methods approach this difficulty and what remains unresolved. Connect factual statements to papers, measurements, or explicit task requirements. Check differing experimental conditions before treating findings as contradictory.
-4. **Make the difficulty understandable.** Use a small example to show the limitation and the desired behavior. Distinguish observed failures from constructed illustrations and gaps in the corpus from gaps in the field.
-5. **Suggest solution directions.** Describe what might change and why it could address the difficulty. Identify known neighboring methods now; reserve a focused `novelty-audit` for developed candidates.
-6. **Prioritize problems.** Assess their importance, remaining room beyond known work, and basic feasibility under project constraints. Name missing information that affects the choice.
+2. **Look for high-leverage openings.** Examine the task and literature through multiple lenses:
+   - **Concrete bottlenecks:** where current approaches fail, degrade, or incur prohibitive cost, and what consequence follows.
+   - **Shared assumptions:** premises that competing methods all take for granted, especially complexity that might be removed or inverted.
+   - **Problem reframing and analogies:** whether the difficulty becomes simpler under a different representation, objective, or a mechanism from an adjacent domain.
+   - **Unexplained observations or measurement blind spots:** anomalies, conflicting findings (after checking experimental conditions), or properties existing benchmarks miss.
+3. **Ground the problem.** Explain how relevant methods approach the difficulty and why it remains open. Connect factual claims about prior work or empirical behavior to sources, measurements, or explicit task requirements; distinguish corpus gaps from field gaps.
+4. **Make the core tension concrete.** Use a small concrete scenario or task instance to show where current behavior falls short and what a good solution must do.
+5. **Sketch initial angles.** Propose what could change—a new mechanism, a simplification, a reframed objective, or a combination—and why it might work. Note obvious neighboring work, but let the problem drive the direction before filtering by literature overlap.
+6. **Prioritize problems.** Assess problem value, room for a substantive contribution, and basic feasibility under project constraints. Name missing information that affects the choice.
 
 ## Output
 
-For each opportunity, include the problem and setting, practical consequence, relevant existing approaches and their limitations, an example, and a possible solution direction or open question. Cite the sources or task requirements that motivate it. Detailed methods are developed by `hypothesis-development`; experiments are a later stage.
+For each opportunity, include the problem and setting, practical or scientific consequence, why existing approaches leave it open (or what shared assumption they rely on), a concrete scenario, and one or more candidate solution angles. Cite the sources or task requirements that motivate it. Detailed methods belong to `hypothesis-development`; experiments belong to a later stage.
 
-Simple changes and combinations can support valuable research. Judge them by the problem they address and the value of a successful solution.
+Simple changes, simplifications, and combinations can support valuable research. Judge them by the problem they address and the value of a successful solution.
 
 ## Completion criterion
 
-The researcher can explain why each shortlisted problem matters, what current approaches leave unresolved, and which solution direction is worth developing next. An experiment plan is not required to establish a research opportunity.
+The researcher can explain why each shortlisted problem matters, what current approaches leave unresolved or assume away, and which solution angle is worth developing next. An experiment plan is not required to establish a research opportunity.

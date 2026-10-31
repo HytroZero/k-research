@@ -25,13 +25,13 @@ Use `collect-paper` to build or refresh the corpus, then `paper-analysis` and `f
 
 ## 2. Define worthwhile problems
 
-Use `opportunity-discovery`. For each promising problem, describe the setting, the specific difficulty, its practical consequence, and why known approaches leave it unresolved. Ground the limitation in sources, observations, or explicit task requirements. An illustrative example can explain a difficulty; label it as illustrative when it is not an observed failure.
+Use `opportunity-discovery`. Look across concrete bottlenecks, shared assumptions that might be removed or inverted, problem reframings, and unexplained observations. For each promising problem, describe the setting, the core difficulty or questioned premise, its consequence, and why known approaches leave it open. Ground factual claims about existing methods or failures in sources, observations, or explicit task requirements.
 
 **Ready to proceed:** the reader can explain what needs solving and why it matters, independently of a proposed method or benchmark.
 
 ## 3. Develop methods against those difficulties
 
-Use `hypothesis-development`. Explain the proposed method's inputs, key steps, and outputs, and connect its design choices to the difficulties identified above. Carry a small example through the current approach and the proposed solution. Compare known neighboring methods during development; revise designs when a neighbor already supplies the proposed solution.
+Use `hypothesis-development`. Start from first principles to design a clean, direct method for the difficulty before adjusting for literature overlap. Explain the method's inputs, key steps, and outputs, connect its design choices to the problem, and trace a small concrete example through the current approach and the proposal. Then compare known neighboring methods: if a neighbor already supplies the core idea, rethink the mechanism or problem rather than adding defensive complexity.
 
 **Ready to proceed:** each developed candidate has a specific problem, an understandable method, a rationale connecting the two, and a useful expected contribution. Basic resource feasibility is enough here; a detailed experiment plan is not a readiness gate.
 

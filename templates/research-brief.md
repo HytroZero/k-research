@@ -7,7 +7,7 @@
 
 ## 1. Problem and value
 
-Describe the task, setting, specific difficulty, and practical consequence. Use relevant prior work to explain why the difficulty remains; cite sources or observations.
+Describe the task, setting, specific difficulty or questioned assumption, and practical or scientific consequence. Use relevant prior work to explain why the problem remains open; cite sources or observations.
 
 ## 2. Proposed method
 
@@ -15,7 +15,7 @@ Explain inputs, outputs, and key steps. Connect the key design choices to the st
 
 ## 3. Worked example
 
-Carry a small instance through the current approach and the proposal. Label illustrative examples and distinguish expected behavior from observed results.
+Carry a small concrete instance through the current approach and the proposal to show how their behavior differs and where the key design trade-off lies.
 
 ## 4. Difference from closest work
 

@@ -9,19 +9,20 @@ Develop an idea far enough that the researcher can understand and judge the prop
 
 ## Process
 
-1. **Define the problem.** Describe the task, setting, specific difficulty, and consequence. Explain why the closest known approaches leave this difficulty unresolved, with sources or observations supporting that account.
-2. **Specify the method.** Explain inputs, outputs, and the key operations that change the current approach. Define the central algorithm, objective, or construction sufficiently to understand how it works; a name or an unspecified scoring function is not a concrete method.
-3. **Connect design to difficulty.** Explain which part of the problem each key design choice addresses and why it could help. Develop theory or a causal mechanism when that is the intended contribution; practical design reasoning can support an empirical proposal.
-4. **Work through an example.** Carry a small task instance through the current approach and the proposal, showing where their behavior differs. Mark constructed examples as illustrative rather than observed evidence.
-5. **Compare known neighbors.** Use existing literature throughout development to identify shared components, actual differences, and remaining gaps in the proposal. Request focused `novelty-audit` work when the candidate is concrete enough to compare.
-6. **State the expected contribution and feasibility.** Explain the capability, efficiency, measurement, or understanding success would add. Identify essential data, model access, or resource requirements and unresolved design choices. Keep expected outcomes distinct from results.
+1. **Define the problem and core tension.** Describe the task, setting, specific difficulty or questioned assumption, and why the closest known approaches leave it unresolved.
+2. **Design from first principles first.** Before adding constraints to avoid prior work, ask what the cleanest, most direct mechanism for resolving the difficulty would be. Prefer a sharp core idea or simplification over a defensive patchwork of existing components.
+3. **Specify the method.** Explain inputs, outputs, and the key operations that change the current approach. Define the central algorithm, objective, or construction concretely enough to see how it works; a label or an unspecified scoring function is not a method. When the core idea admits materially different realizations, give the minimal clean instantiation first and note the main design alternative rather than locking in arbitrary boilerplate early.
+4. **Connect design to difficulty.** Explain which part of the problem each key design choice addresses and why it should help. Keep every moving part earning its keep; drop components that exist only to look different from prior papers.
+5. **Work through an example.** Trace a small concrete instance through the current approach and the proposal, showing step by step where their behavior diverges and what design question the trace exposes.
+6. **Position against known neighbors.** Compare the formed design against neighboring literature to identify shared building blocks and actual differences. If a neighbor already solves the problem cleanly, either reframe the problem, find a genuinely simpler or stronger mechanism, or set the candidate aside—do not bolt on incidental complexity just to claim novelty. Request focused `novelty-audit` work once the candidate is concrete.
+7. **State the expected contribution and feasibility.** Explain the capability, efficiency, simplification, measurement, or understanding success would add. Identify essential data, model access, or resource requirements and the main open design question.
 
 For a theoretical contribution, specify the proposition, assumptions, and proof approach. For a mechanistic or causal contribution, articulate the explanation and relevant alternatives. Detailed validation belongs to `decisive-test-design` when the task advances to experiment planning.
 
 ## Output
 
-Use `templates/hypothesis-card.md`. Center the output on the problem, method, design rationale, worked example, and difference from known approaches. Describe the expected outcome in terms of the task; measurement protocols and a first experiment are optional follow-on artifacts.
+Use `templates/hypothesis-card.md`. Center the output on the problem, method, design rationale, worked example, and difference from known approaches. Write the method and worked example directly without repetitive sentence-level disclaimers that the proposal is untested; the artifact status already marks it as a proposal.
 
 ## Completion criterion
 
-A reader can trace the method's key steps through the example, connect its design choices to the stated difficulty, and explain the potential contribution relative to known work. An unresolved core algorithm should be identified as the next design task rather than hidden behind an experiment plan.
+A reader can trace the method's key steps through the example, connect its design choices to the stated difficulty, and explain the potential contribution relative to known work. An unresolved core algorithm should be identified as the next design task rather than hidden behind boilerplate formulas or an experiment plan.

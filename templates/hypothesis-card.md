@@ -5,19 +5,19 @@
 
 ## Problem and setting
 
-Describe the task, specific difficulty, and practical consequence. Explain what known approaches leave unresolved, with supporting sources or observations.
+Describe the task, specific difficulty or questioned assumption, and consequence. Explain what known approaches leave unresolved, with supporting sources or observations.
 
 ## Proposed method
 
-Describe inputs, outputs, and key steps. Define the central operation or objective; identify any unresolved design choice.
+Describe inputs, outputs, and key steps. Define the central operation or objective concretely; when a core step has materially different realizations, state the minimal clean realization and any key design alternative.
 
 ## Design rationale
 
-Connect each key design choice to the difficulty it addresses and explain why it could help.
+Connect each key design choice to the difficulty it addresses and explain why it should help.
 
 ## Worked example
 
-Trace a small instance through the current approach and the proposal. Label constructed illustrations separately from observed failures.
+Trace a small concrete instance through the current approach and the proposal, showing where their behavior diverges and what design question the trace exposes.
 
 ## Closest known work and difference
 
@@ -25,7 +25,7 @@ Explain shared components, the actual difference, and why it matters. Link sourc
 
 ## Expected outcome and contribution
 
-State the useful change in task behavior or understanding that success would add. Separate expected outcomes from observed results.
+State the useful change in task behavior, efficiency, simplification, or understanding that success would add.
 
 ## Basic feasibility and next design question
 

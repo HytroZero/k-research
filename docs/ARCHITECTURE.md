@@ -53,8 +53,8 @@ A user-invoked skill must not invoke another user-invoked skill. The router can 
 ## Main research loop
 
 1. Collect and index an initial corpus with BibTeX and key PDFs, then build a field model.
-2. Define useful problems: the setting, specific difficulty, practical consequence, and why existing approaches leave it unresolved.
-3. Develop concrete methods with design choices tied to those difficulties; explain their operation through a worked example and compare known neighbors during development.
+2. Define useful problems: the setting, specific difficulty or questioned assumption, consequence, and why existing approaches leave it open.
+3. Develop concrete methods from first principles with design choices tied to those difficulties; trace their operation through a worked example and then position them against known neighbors without adding defensive complexity.
 4. Verify mature candidates against the closest prior work through a focused novelty audit.
 5. Recommend pursuing, refining, deferring, or rejecting the direction based on problem value, method fit, substantive difference, and basic feasibility. Deliver the Research Brief here by default.
 6. When experiments or a full plan are requested, or a method enters validation, design the smallest informative experiment in a separate plan. Use full red-team review on demand.

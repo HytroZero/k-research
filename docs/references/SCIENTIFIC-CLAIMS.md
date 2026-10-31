@@ -19,7 +19,7 @@ At the idea stage, develop a worthwhile problem, a concrete method, and a ration
 
 For empirical methods, improvements in capability, performance, efficiency, or reliability can carry the contribution. Develop formal theory when the work makes a theoretical claim, and competing mechanism explanations when the work claims to explain a process. Distinguish a design intuition from a demonstrated explanation.
 
-Write directly about the proposed contribution and next action. Include uncertainty when it changes the recommendation, interpretation, or test design; state the concrete issue and how to resolve it. Omit routine disclaimers and repeated self-qualification.
+Write directly about the proposed contribution and next action. Because proposals, hypothesis cards, and worked examples are already framed as unverified designs, state how the method operates without sentence-by-sentence reminders that the example is constructed or that experiments have not yet been run—simply never fabricate observed results or citations. Include uncertainty when it changes the recommendation, interpretation, or test design; state the concrete issue and how to resolve it. Omit routine disclaimers and repeated self-qualification.
 
 ## Claim strength
 

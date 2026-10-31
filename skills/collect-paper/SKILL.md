@@ -18,10 +18,11 @@ Expand the topic into query families using technical synonyms, related tasks, pr
 Use available literature search and retrieval tools; verify records against proceedings, publisher pages, official paper repositories, author pages, or research-group publication pages. Search indexes and citation counts help discovery.
 
 A retained paper must be relevant and satisfy at least one source criterion:
-- publication at a leading conference in the relevant field;
-- authorship by a recognized research team, university, or company.
+- publication at a leading conference or journal in the relevant field;
+- authorship by a recognized research team, university, or company;
+- a technically substantive preprint, workshop paper, or adjacent-field work that introduces a distinct mechanism, formulation, or counterexample not covered by mainstream venues.
 
-Apply the criteria as alternatives. Eligible teams' preprints may be collected before publication. Verify venue, publication status, and author affiliations from the paper or an official source. Record the qualifying venue or organization, the basis for treating it as established in this field, and a source URL. Do not equate a workshop or submitted manuscript with main-conference acceptance. If eligibility cannot be established, keep the candidate in the search log for follow-up rather than the retained collection. Use a user-provided source list when available; otherwise make the chosen criteria explicit without interrupting routine collection for approval.
+Apply the criteria as alternatives. Verify venue, publication status, and author affiliations from the paper or an official source. Record the qualifying venue, organization, or substantive-inclusion rationale and a source URL. Do not equate a workshop or submitted manuscript with main-conference acceptance. If neither source eligibility nor a specific technical rationale can be established, keep the candidate in the search log for follow-up rather than the retained collection. Use a user-provided source list when available; otherwise make the chosen criteria explicit without interrupting routine collection for approval.
 
 Read titles and abstracts, plus method passages when needed to determine relevance. Give each retained paper a short, topic-specific inclusion reason. Source eligibility selects the collection; assessment of the paper's findings belongs to later reading.
 

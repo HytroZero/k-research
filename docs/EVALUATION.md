@@ -32,7 +32,8 @@ Use time-sliced evaluation where possible: only provide the model papers availab
 
 Check these cases alongside literature accuracy:
 - A useful training-recipe change with no theory: explain the concrete change and why it addresses the problem; leave detailed validation to the experiment stage.
-- A combination of known components: compare its actual difference and potential benefit, rather than rejecting it for being a combination.
+- A combination or simplification of known components: compare its actual difference and potential benefit, rather than rejecting it for being simple or a combination.
+- A close neighbor that already solves the problem: reframe the problem, find a genuinely simpler or stronger mechanism, or set the idea aside rather than bolting on defensive complexity just to look different.
 - A claimed improvement obtained with extra compute: propose a matched-budget control.
 - A causal explanation: request an intervention or comparison that distinguishes explanations.
 - A theorem claim: identify proof obligations; empirical success alone does not establish it.

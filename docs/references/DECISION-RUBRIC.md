@@ -15,15 +15,15 @@ An unresolved central design choice calls for further method development. Detail
 
 ## Comparison dimensions
 
-1. **Problem value:** What limitation matters, to whom, and with what consequence?
-2. **Method fit:** How do the proposed operations address that limitation? Does the example expose a missing step?
-3. **Difference from prior work:** What is already solved, what does the proposal add, and why does that difference matter?
+1. **Problem value:** What limitation or questioned assumption matters, to whom, and with what consequence?
+2. **Method fit and simplicity:** How cleanly do the proposed operations address that difficulty? Does every component earn its keep, or are parts added only to avoid overlap with prior papers? Does the worked example expose a missing step?
+3. **Difference from prior work:** What is already solved, what does the proposal add or simplify, and why does that difference matter?
 4. **Rationale:** Why should the design help? Assess formal or causal depth when that carries the contribution.
 5. **Basic feasibility:** Are the essential data, model access, and resources available? Which constraint changes the choice?
 
 When choosing an experiment, additionally assess whether it informs the next decision and whether it can be performed with the available resources. Ease of experimentation alone does not establish a direction's research value.
 
-A method's simplicity does not determine its contribution. Evaluate combinations, training strategies, losses, and prompts using the same dimensions as other proposals.
+A method's simplicity is a strength when it solves a real problem or removes an unnecessary assumption. Evaluate simplifications, combinations, training strategies, losses, and prompts using the same dimensions as other proposals.
 
 ## Recommendation labels
 
