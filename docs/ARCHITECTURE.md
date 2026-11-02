@@ -39,6 +39,8 @@ Human
   |
   +--> ask-k (user-invoked router)
   |
+  +--> textbook-style-explanation (standalone or project teaching explanation)
+  |
   +--> discover-research-direction (user-invoked orchestrator)
           |
           +--> collect-paper

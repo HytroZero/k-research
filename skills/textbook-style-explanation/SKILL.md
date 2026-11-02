@@ -1,43 +1,42 @@
 ---
 name: textbook-style-explanation
-description: Use when the user asks to explain or understand a theory, hypothesis, method, concept, or principle. Automatically provide a clear textbook-style explanation. Also use to rewrite technical material for understanding. No research project is required.
+description: Explain a theory, hypothesis, method, concept, or principle in clear textbook-style prose, or rewrite technical material for understanding. Use when the user asks to explain, teach, or understand how an idea works, with or without a research project.
 ---
 
 # Textbook Style Explanation
 
-Write an explanation that helps the reader understand what an idea means, why it arises, and how its reasoning works. This is an independent writing skill: the subject can come from any field, a supplied passage, or a reader's question. No research project, literature review, or method-development workflow is required.
+Teach the reader how an idea works, why we need it, and how each step of the reasoning holds together—in the spirit of Gilbert Strang's *Introduction to Linear Algebra* and Adrian Banner's *The Calculus Lifesaver*. Write like a great teacher at the blackboard: direct, warm, and concrete, thinking out loud with the reader rather than reciting a reference manual.
 
-## Establish the teaching scope
+This is a standalone teaching skill. The subject can come from any discipline, a supplied passage, or a direct question; no research project, literature workflow, or fixed chapter template is required.
 
-Use the requested subject, language, reader background, and depth. Infer a reasonable starting point from the request; ask only when an ambiguity would materially change the explanation. Supply necessary local prerequisites where they become useful, rather than opening with a broad remedial course.
+## Calibrate to the reader and source
 
-For supplied material, preserve its meaning and assumptions while reorganizing the exposition. Inspect referenced material before attributing claims to it. Resolve factual uncertainty with appropriate sources; keep citations close to the claims they support without interrupting every explanatory sentence. If the subject is a proposed hypothesis, preserve the distinction between its premises, proposed mechanism, and unestablished consequences.
+Match the reader's language, background, and target depth from the prompt, asking only when an ambiguity would lead to the wrong explanation. Fold missing prerequisites in right where they are needed instead of opening with a long remedial detour.
 
-## Build understanding
+When working from supplied or cited material, inspect it before attributing claims and keep its assumptions intact while reorganizing the exposition for clarity. If the subject is a proposed hypothesis or untested method, make its internal logic clear while keeping its premises, proposed mechanism, and unestablished predictions distinct.
 
-Choose the teaching moves that serve this subject. These are writing principles, not a mandatory sequence or set of headings.
+## How to build understanding
 
-- **Give the concept a reason to exist.** Start from a concrete question, an observable phenomenon, or a difficulty with a familiar approach. Let the reader see what the new concept makes possible. A mathematical puzzle can provide this motivation just as well as an everyday example.
-- **Connect intuition to precise meaning.** Use familiar language or a useful picture to establish the idea, then introduce definitions and notation as the explanation needs them. Show how the formal expression captures the intuition. Make clear when an analogy stops being reliable.
-- **Give each important step a purpose.** Explain what a transformation, construction, or assumption accomplishes and why it is a useful next move. Provide a reader-facing rationale that can be checked against the mathematics or mechanism. Expand the transitions likely to be unfamiliar to this reader; routine operations need less space.
-- **Make examples carry the explanation.** Choose a small example whose details expose the central relationship. Work through it far enough to connect the symbols, operations, and interpretation. Add a variation or counterexample when it reveals an important condition or misconception; choose difficulty for its teaching value.
-- **Meet questions where they arise.** Anticipate specific confusions at the point where the reader has enough context to understand the answer. Explain why an appealing alternative fails when that contrast clarifies the idea.
-- **Layer rigor deliberately.** Distinguish intuition, derivation, proof, and empirical justification. State assumptions where they matter. When a full proof would derail the requested explanation, give the relevant reasoning and identify what remains unproved; when proof is the subject, develop it fully.
+Use the teaching moves that fit the subject rather than marching through a rigid checklist:
 
-## Voice and presentation
+- **Start with the problem that forces the idea into existence.** Open with a concrete question, a physical or geometric picture, or the exact point where a naive approach breaks down. For instantaneous velocity, show why dividing distance by a finite time interval only ever gives an average, so the reader feels the need for a limit before seeing the derivative formula.
+- **Concrete numbers and small cases before general notation.** Like Strang, put a small, tangible example on the board early—a $2 \times 2$ case, a three-token sequence, a toy physical system—and work it far enough that the reader can see the mechanism operating in plain sight before or alongside the general formula.
+- **Look at the central object from two angles.** Pair algebra with geometry, a formula with the computation it performs, or an objective function with the force it exerts on the variables. Understanding clicks when two views of the same thing line up.
+- **Think out loud before the tricky step.** Like Banner, never pull a transformation, substitution, or auxiliary construction out of a hat. Pause before the move to say *why* we are doing it, what obstacle it clears, and why a tempting shortcut fails. Spend your words on the real conceptual bottlenecks, not on routine algebra or repetitive summaries.
+- **Layer rigor honestly.** Keep intuition, heuristic derivation, formal proof, and empirical observation distinct. State the assumptions that actually do work in a step, and point out where an analogy stops holding. If a full proof would derail the explanation, give the core mechanism and name what remains to be proved; if the proof *is* the subject, walk through it completely.
 
-Use patient, direct prose, as a knowledgeable teacher speaking to an attentive reader. Let paragraphs develop a connected argument. Natural questions and occasional lightness can help, but the explanation should not become a scripted dialogue.
+## Voice and notation
 
-Explain every symbol used, through surrounding prose, an accompanying annotation, or a symbol table. A single word is sufficient when it identifies the meaning clearly. Cover variables, functions, sets, constants, indices, subscripts, superscripts, operators, and relation symbols, including familiar notation. Place explanations before or alongside the first use; explain a symbol again when its meaning or role changes. A symbol table is an option, not a required format.
+Write in clear, conversational paragraphs that carry a continuous train of thought. Direct questions (*"What happens if $\lambda = 0$?"*) and brief, natural asides keep the reader engaged without turning the prose into a scripted dialogue. Never write "it is obvious," "clearly," or "trivially"—if a step is worth mentioning, show how it works.
 
-Connect equations to the surrounding sentences and interpret consequential results in words. Prefer concrete explanations to assurances that something is obvious or easy. Spend words on conceptual obstacles rather than repeated summaries or encouragement.
+Demystify every piece of notation on the spot:
+- Translate what an equation is actually saying into plain words, and connect it grammatically to the surrounding prose.
+- Explain every symbol the reader needs to parse the expression—variables, functions, sets, constants, indices, subscripts, superscripts, and operators—before or right beside its first appearance, and again if its role changes. A brief inline phrase is often enough; use a compact symbol list or table when an expression introduces many moving parts at once.
 
-Use headings, diagrams, tables, or lists when they help the reader follow the material. Let the subject determine the organization and length. Exercises, historical background, applications, and a final recap are optional, not required sections.
+Let the subject dictate the layout. Use headings, diagrams, tables, or worked examples when they clarify the structure; skip textbook boilerplate such as exercises, historical preambles, or end-of-chapter recaps unless requested.
 
-For example, when introducing instantaneous velocity, first expose why a finite interval gives only an average. Then introduce the difference quotient and explain why shrinking the interval answers the original question. The important teaching move is to motivate the limit and explain its role, not merely display the derivative formula. Adapt this principle to the subject rather than reusing the same story.
+## Deliver and verify
 
-## Deliver and check
+Deliver the explanation directly in the conversation unless the user asks to write or edit a file. Use the user's requested path for standalone files; do not create research state, proposals, or experiment plans as a side effect.
 
-Deliver the explanation itself in the conversation unless the user asks for a file or an edit to an existing document. Use the requested destination for standalone files. This skill does not create research state, proposals, or experiment plans as a side effect.
-
-Before delivering, check that the reader can follow the central reasoning at the chosen level: necessary terms have been introduced, every symbol has an explanation, consequential transitions have explanations, examples agree with the general statements, and the conclusion answers the opening question. Check mathematical steps and factual claims, and preserve the status of any hypothesis. Revise gaps in the explanation rather than appending a checklist or a process report.
+Before finishing, read the explanation from the reader's seat: every term and symbol is introduced when needed, no consequential step leaps across a gap, the worked numbers match the general formula, and the ending resolves the opening question. Fix any gap in the prose itself rather than appending a checklist or process report.

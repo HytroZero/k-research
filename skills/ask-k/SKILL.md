@@ -31,9 +31,9 @@ For an end-to-end investigation, recommend **`discover-research-direction`**. It
 
 | Current situation | Starting point |
 |---|---|
-| A request to explain or understand a theory, hypothesis, method, concept, or principle, with or without a specified writing style or research project | `textbook-style-explanation` |
+| A request to explain or teach how a theory, hypothesis, method, concept, or principle works, with or without a research project | `textbook-style-explanation` |
 | A broad topic, but no paper collection | `collect-paper` |
-| One paper to understand | `paper-analysis` |
+| One paper to extract claims, evidence locators, and limitations from | `paper-analysis` |
 | Papers collected, relationships unclear | `field-synthesis` |
 | Familiar with the field, looking for useful problems | `opportunity-discovery` |
 | An idea that needs a concrete method and design rationale | `hypothesis-development` |
