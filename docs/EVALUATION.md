@@ -1,6 +1,6 @@
 # Evaluation Protocol
 
-Evaluate whether the skills improve research judgment, not whether their prose sounds academic.
+Evaluate whether the research skills improve research judgment. Evaluate standalone teaching explanations for understanding and accuracy, not whether their prose sounds academic.
 
 ## Evaluation set
 
@@ -18,6 +18,7 @@ Use time-sliced evaluation where possible: only provide the model papers availab
 
 | Skill | Useful measures |
 |---|---|
+| `textbook-style-explanation` | conceptual accuracy, motivated definitions and steps, reader-appropriate prerequisites, example consistency, distinction between intuition and justification |
 | `collect-paper` | topic relevance, verified source eligibility, version deduplication, BibTeX accuracy, working PDF links |
 | `paper-analysis` | claim extraction precision, evidence-locator accuracy, limitation recall |
 | `field-synthesis` | coverage of major research clusters, correct conflict mapping, unsupported synthesis rate |
@@ -72,6 +73,8 @@ Evaluate persisted outputs against [Project Layout](PROJECT-LAYOUT.md):
 Distinguish textual consistency review from observed agent behavior on these cases.
 
 ## Human review
+
+For standalone `textbook-style-explanation`, evaluate learning rather than research decisions: explain a familiar mathematical principle to a beginner, teach a method to a reader missing one prerequisite, and rewrite an unverified hypothesis without presenting it as established. Check that each output develops a connected explanation, handles its actual conceptual obstacles, and requires no research project or fixed chapter template. These are behavioral cases to run, not evidence of performance until executed.
 
 Use at least two domain experts for high-stakes benchmark cases where feasible. Ask them to annotate independently before adjudication. Record disagreement; expert disagreement is itself a property of the task.
 

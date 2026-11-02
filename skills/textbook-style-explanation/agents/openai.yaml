@@ -1,0 +1,5 @@
+interface:
+  display_name: "Textbook Style Explanation"
+  short_description: "Teach concepts through clear textbook-style prose"
+policy:
+  allow_implicit_invocation: true

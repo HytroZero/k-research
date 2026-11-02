@@ -1,4 +1,4 @@
-56 authored files
+58 authored files
 
 .agents/plugins/marketplace.json
 .codex-plugin/plugin.json
@@ -50,6 +50,8 @@ skills/paper-analysis/SKILL.md
 skills/paper-analysis/agents/openai.yaml
 skills/red-team/SKILL.md
 skills/red-team/agents/openai.yaml
+skills/textbook-style-explanation/SKILL.md
+skills/textbook-style-explanation/agents/openai.yaml
 templates/decision-record.md
 templates/hypothesis-card.md
 templates/novelty-audit.md

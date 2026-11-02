@@ -1,7 +1,7 @@
 {
   "name": "k-research",
   "version": "0.1.0",
-  "description": "Composable skills for scientific research reasoning and paper collection.",
+  "description": "Composable skills for scientific research reasoning, paper collection, and textbook-style explanations.",
   "skills": "./skills/",
   "interface": {
     "displayName": "K Research",

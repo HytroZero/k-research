@@ -2,6 +2,8 @@
 
 This contract governs files produced by K Research in the user's research project, not the skill distribution itself. Read it before creating, moving, or updating project artifacts. Paths below are relative to the research project; skill references to docs, templates, and schemas are relative to the suite root.
 
+Standalone teaching documents produced by `textbook-style-explanation` are outside this research-artifact contract and use the user's requested destination. Editing an existing research document retains that document's established location.
+
 ## Standard tree
 
 ```text

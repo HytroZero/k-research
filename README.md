@@ -4,7 +4,7 @@
 
 [中文](README.zh-CN.md)
 
-11 composable agent skills for collecting papers, understanding a field, developing research ideas, checking novelty, and planning informative experiments.
+12 composable agent skills for collecting papers, understanding a field, developing research ideas, checking novelty, planning informative experiments, and explaining concepts in textbook-style prose.
 
 ## Setup
 
@@ -38,6 +38,8 @@ You can also use any [individual skill](skills/) directly. Direction discovery c
 
 Methods selected for recommendation receive parallel red-team and novelty-audit subagent reviews, followed by revision by the main agent. This applies to standalone method development and direction discovery. Review normally runs once, with at most one targeted follow-up after a substantial change. Users can request a skip; hosts without subagents perform sequential reviews and disclose that fallback.
 
+Requests to explain or understand a theory, hypothesis, method, concept, or principle automatically trigger [textbook-style-explanation](skills/textbook-style-explanation/SKILL.md), for example: “Explain why the chain rule works, assuming basic knowledge of derivatives.” No explicit writing-style request or research project is required. It provides a textbook-style explanation in the conversation by default and saves a file only when requested.
+
 ## Research project files
 
 Research outputs use one [standard layout](docs/PROJECT-LAYOUT.md): `README.md` is the human entry point, `research/` holds the overview and direction proposals, and `papers/` holds the complete index, bibliography, notes, and PDFs. Agent-only state, cache, and temporary work stay in `.research/`.
@@ -49,6 +51,7 @@ Skills update current documents rather than saving a report per run. Files are c
 | Skill | Description |
 |---|---|
 | [ask-k](skills/ask-k/SKILL.md) | Choose the right skill or short workflow for your current research stage, with a ready-to-use invocation. |
+| [textbook-style-explanation](skills/textbook-style-explanation/SKILL.md) | Automatically respond to requests to explain a theory, hypothesis, method, concept, or principle with approachable textbook-style prose; no research project required. |
 | [discover-research-direction](skills/discover-research-direction/SKILL.md) | Develop worthwhile problems and concrete methods, verify their differences from closest work, and recommend a research direction. |
 | [collect-paper](skills/collect-paper/SKILL.md) | Build a screened paper collection for a topic, verify sources, download key PDFs, and save an index and BibTeX bibliography. |
 | [paper-analysis](skills/paper-analysis/SKILL.md) | Read an individual paper to explain its question, method, claims, evidence, and limitations, with source locators. |

@@ -12,6 +12,8 @@ It does not own:
 
 Those capabilities can be provided by other agents. This suite hands them a structured Research Brief and receives their results as new evidence.
 
+`textbook-style-explanation` is an independent writing skill alongside the research loop. Requests to explain or understand a theory, hypothesis, method, concept, or principle trigger it automatically, without requiring a specified writing style, research project, or shared research state. Users and agents can also invoke it directly; `ask-k` can route teaching requests to it. Its output is a textbook-style explanation in the conversation or a user-requested document.
+
 ## Three layers
 
 ### 1. Skills: research discipline

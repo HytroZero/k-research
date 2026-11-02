@@ -4,7 +4,7 @@
 
 [English](README.md)
 
-11 个可组合的研究技能，帮助智能体收集论文、梳理领域、发展研究想法、检查新颖性和设计实验。
+12 个可组合的技能，帮助智能体收集论文、梳理领域、发展研究想法、检查新颖性、设计实验，以及用教材式语言讲解概念与原理。
 
 ## 准备
 
@@ -38,6 +38,8 @@
 
 准备正式推荐的具体方法默认由两个子智能体并行进行 red-team 和 novelty audit，再由主智能体综合意见修改方法。独立方法开发和完整方向探索均采用这一流程。默认审查一轮，实质修改后最多追加一轮针对性复查。用户可明确要求跳过；环境不支持子智能体时顺序审查，并说明降级方式。
 
+用户要求解释或理解某个理论、假设、方法、概念或原理时，自动触发 [textbook-style-explanation](skills/textbook-style-explanation/SKILL.md)，例如：“解释链式法则为什么成立，假设读者懂基本的导数概念。”无需指定文风或提供研究项目。它默认在对话中用教材式语言讲解，仅在用户要求时保存文件。
+
 ## 研究项目文件
 
 研究产物采用统一的[目录合同](docs/PROJECT-LAYOUT.md)：`README.md` 是人类阅读入口，`research/` 保存领域梳理与各方向方案，`papers/` 保存完整文献索引、统一书目、笔记和原文。agent 内部状态、缓存和临时工作统一放在 `.research/`。
@@ -49,6 +51,7 @@
 | 技能 | 描述 |
 |---|---|
 | [ask-k](skills/ask-k/SKILL.md) | 根据当前研究阶段选择合适的技能或简短工作流，并提供可直接使用的调用指令。 |
+| [textbook-style-explanation](skills/textbook-style-explanation/SKILL.md) | 用户要求解释理论、假设、方法、概念或原理时自动触发，用平易、连贯的教材式语言讲解，不依赖研究项目。 |
 | [discover-research-direction](skills/discover-research-direction/SKILL.md) | 从研究领域出发，明确值得解决的问题、发展具体方法、核实与最接近工作的区别，并给出方向建议。 |
 | [collect-paper](skills/collect-paper/SKILL.md) | 围绕主题检索和筛选论文，核实来源，下载关键 PDF，并建立论文索引和 BibTeX 文献库。 |
 | [paper-analysis](skills/paper-analysis/SKILL.md) | 深入分析单篇论文的研究问题、方法、主张、证据和局限，并标注原文位置。 |

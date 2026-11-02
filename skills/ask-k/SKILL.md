@@ -31,6 +31,7 @@ For an end-to-end investigation, recommend **`discover-research-direction`**. It
 
 | Current situation | Starting point |
 |---|---|
+| A request to explain or understand a theory, hypothesis, method, concept, or principle, with or without a specified writing style or research project | `textbook-style-explanation` |
 | A broad topic, but no paper collection | `collect-paper` |
 | One paper to understand | `paper-analysis` |
 | Papers collected, relationships unclear | `field-synthesis` |
@@ -46,7 +47,7 @@ Reuse existing artifacts and enter at the relevant stage. `hypothesis-developmen
 
 ## Choose and respond
 
-1. Read the request and inspect relevant existing project artifacts to establish the current stage. Ask one focused question only when the answer changes the route.
+1. Read the request and inspect relevant existing project artifacts when the task concerns a research project. Standalone explanation needs only the subject and available reader context. Ask one focused question only when the answer changes the route.
 2. Read the candidate skills and choose the smallest useful route. If several are needed, explain the short sequence and the immediate starting point.
 3. By default, respond with the recommended skill, why it fits, and a ready-to-use invocation containing the user's topic or task. Wait for the researcher to choose before starting work.
 4. If the researcher explicitly asks to choose and start, invoke the selected model-invoked skill through the host's Skill mechanism, or read and follow its instructions when that mechanism is unavailable. The end-to-end user-invoked workflow remains a recommendation for the researcher to start.
