@@ -2,7 +2,7 @@
 
 ## Product boundary
 
-Easy AI Research is a **scientific reasoning layer**. Its job is to help a researcher understand a field, identify worthwhile questions, develop concrete methods grounded in those questions, assess novelty, expose weaknesses, and update decisions when evidence changes.
+K Research is a **scientific reasoning layer**. Its job is to help a researcher understand a field, identify worthwhile questions, develop concrete methods grounded in those questions, assess novelty, expose weaknesses, and update decisions when evidence changes.
 
 It does not own:
 - code implementation or experiment execution;

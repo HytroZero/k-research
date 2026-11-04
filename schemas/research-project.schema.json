@@ -31,6 +31,14 @@
     "scope": {
       "type": "object"
     },
+    "constraints": {
+      "type": [
+        "array",
+        "object",
+        "string",
+        "null"
+      ]
+    },
     "status": {
       "enum": [
         "active",

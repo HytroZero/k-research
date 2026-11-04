@@ -22,16 +22,14 @@ For each material statement:
 
 A paper's abstract is not evidence for details that appear only in its methods or results. If only an abstract was read, state that limitation.
 
-## Evidence strength
+## Evidence strength and status
 
-Use qualitative strength with reasons:
-- **Strong direct evidence:** primary source directly tests or proves the claim, with a relevant design and transparent reporting.
-- **Moderate evidence:** relevant but indirect, limited in scope, or dependent on assumptions.
-- **Weak evidence:** suggestive, underpowered, indirect, or based on a proxy that may not measure the claim.
-- **Unverified:** source or locator has not been checked.
-- **Unknown:** available material does not answer the question.
+Record verification and directness using the `status` labels in `docs/RESEARCH-STATE.md` (`direct`, `indirect`, `secondary`, `unverified`, `unknown`). For verified sources, assess qualitative `strength` with reasons:
+- **`strong`:** primary source directly tests or proves the claim, with a relevant design and transparent reporting.
+- **`moderate`:** relevant but indirect, limited in scope, or dependent on assumptions.
+- **`weak`:** suggestive, underpowered, indirect, or based on a proxy that may not measure the claim.
 
-Do not convert these labels into unsupported numeric probabilities.
+When a source or locator has not been checked (`unverified`) or available material does not answer the question (`unknown`), state that status directly rather than assigning a strength label. Do not convert these labels into unsupported numeric probabilities.
 
 ## Negative evidence
 

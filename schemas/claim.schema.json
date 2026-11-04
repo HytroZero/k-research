@@ -31,8 +31,7 @@
         "theoretical",
         "generalization",
         "novelty",
-        "practical",
-        "hypothesis"
+        "practical"
       ]
     },
     "scope": {
@@ -59,6 +58,10 @@
       "items": {
         "type": "string"
       }
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1
     }
   }
 }

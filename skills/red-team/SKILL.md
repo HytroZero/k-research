@@ -44,7 +44,7 @@ End with:
 - strongest case for the idea;
 - consequential objections found, if any;
 - unresolved fatal/major objections;
-- recommended action: `proceed`, `revise`, `defer`, or `reject`.
+- recommended decision: `pursue` (or `continue`), `refine` (or `revise`), `defer`, or `reject`.
 
 ## Discipline
 

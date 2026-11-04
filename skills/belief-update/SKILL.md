@@ -18,9 +18,9 @@ Before writing project files, read [Project Layout](../../docs/PROJECT-LAYOUT.md
 3. **Map affected claims and hypotheses.** Identify which predictions, assumptions, novelty claims, and decisions the evidence bears on. Include evidence that qualifies or does not address a claim.
 4. **Compare against prior predictions.** State what the hypothesis predicted, what was observed, and whether the result was expected, surprising, ambiguous, or outside the tested scope.
 5. **Check interpretation.** Investigate concrete confounds, measurement problems, or implementation differences that could change the decision. Compare mechanisms when the result bears on an explanatory claim.
-6. **Update status.** Use `supported`, `weakened`, `rejected`, `revised`, or `unresolved` as appropriate. Status is qualitative and must be justified. Do not manufacture precise probabilities.
+6. **Update status.** Use `supported`, `weakened`, `rejected`, `revised`, or `deferred` as appropriate, or keep `testable` / `under_review` when evidence is inconclusive. Status is qualitative and must be justified. Do not manufacture precise probabilities.
 7. **Revisit downstream artifacts.** Mark affected opportunities, contribution claims, novelty judgments, test plans, and decisions as current, superseded, or requiring review.
-8. **Choose the next decision.** Recommend continue, revise, run a discriminating follow-up, defer, or stop. Explain what evidence would change that recommendation.
+8. **Choose the next decision.** Recommend `continue`, `revise`, `defer`, `reject`, or `stop`, and state the next action (such as running a discriminating follow-up). Explain what evidence would change that recommendation.
 9. **Record the change.** Update current artifacts and append meaningful changes of judgment, their evidence, and reasons to `research/decisions.md` using `templates/decision-record.md`. Follow the shared state contract; prior file copies are not required.
 
 ## Output

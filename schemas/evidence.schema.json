@@ -6,9 +6,11 @@
   "required": [
     "evidence_id",
     "source_id",
+    "source_locator",
     "relation",
     "status",
-    "summary"
+    "summary",
+    "claim_refs"
   ],
   "properties": {
     "evidence_id": {
@@ -48,6 +50,14 @@
         "unknown"
       ]
     },
+    "strength": {
+      "enum": [
+        "strong",
+        "moderate",
+        "weak",
+        null
+      ]
+    },
     "evidence_type": {
       "type": "string"
     },
@@ -71,7 +81,12 @@
       "type": "array",
       "items": {
         "type": "string"
-      }
+      },
+      "minItems": 1
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1
     }
   }
 }

@@ -35,7 +35,7 @@ List the formal, empirical, data, or compute assumptions the method or conclusio
 
 ## Evidence
 
-Record the primary evidence bearing on each core claim. Use relations (`supports`, `contradicts`, `qualifies`, `contextualizes`, `does_not_address`), status (`direct`, `indirect`, `secondary`, `unverified`, `unknown`), and strength (`strong`, `moderate`, `weak`).
+Record the primary evidence bearing on each core claim. Use relations (`supports`, `contradicts`, `qualifies`, `contextualizes`, `does_not_address`), status (`direct`, `indirect`, `secondary`, `unverified`, `unknown`), and strength (`strong`, `moderate`, `weak`). For `unverified` or `unknown`, record status without strength.
 
 | Evidence ID | Claim and relation | Experiment, proof, or observation | Result and conditions (baselines, metrics, setting) | Locator | Status and strength |
 |---|---|---|---|---|---|

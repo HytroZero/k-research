@@ -52,6 +52,13 @@
       ],
       "format": "uri"
     },
+    "alternate_urls": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      }
+    },
     "abstract": {
       "type": [
         "string",
@@ -155,6 +162,17 @@
         "unavailable",
         "failed"
       ]
+    },
+    "note_path": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Path to the reading note relative to the paper index."
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1
     }
   }
 }

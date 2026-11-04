@@ -19,6 +19,6 @@ Use these terms consistently across the project. Keep this file about domain lan
 | **Research direction** | A selected hypothesis or connected set of hypotheses that the researcher has decided to investigate. |
 | **Decisive test** | The smallest informative test that guides a research decision; it may compare methods or distinguish explanations. |
 | **Belief update** | A recorded change in confidence or status caused by new evidence. |
-| **Research decision** | A traceable choice to continue, revise, defer, or reject a question or hypothesis, with rationale. |
+| **Research decision** | A traceable choice to pursue, refine, continue, revise, defer, reject, or stop a direction or hypothesis, with rationale. |
 | **Corpus boundary** | The explicit limits of the literature set searched or reviewed. |
 | **Unknown** | Something not established by the available evidence. Unknowns must remain visible rather than being filled with plausible-sounding assumptions. |

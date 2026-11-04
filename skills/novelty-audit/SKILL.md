@@ -37,7 +37,7 @@ For each closest prior work, include:
 - exact overlapping claim or mechanism;
 - what the prior work already establishes;
 - what the candidate adds;
-- whether the difference is conceptual, mechanistic, methodological, theoretical, empirical, evaluative, or only contextual;
+- which novelty dimension(s) carry the difference (`problem`, `mechanism`, `method`, `theoretical`, `empirical`, `evaluation`, `boundary`, `synthesis`), or whether it is only contextual;
 - source locators for both sides;
 - residual uncertainty.
 

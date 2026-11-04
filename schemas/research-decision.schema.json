@@ -58,6 +58,10 @@
     "created_at": {
       "type": "string",
       "format": "date-time"
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1
     }
   }
 }

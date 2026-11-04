@@ -11,7 +11,7 @@ This document defines the shared language and lifecycle for research artifacts. 
 - **Opportunity:** an evidence-grounded reason to investigate a problem.
 - **Hypothesis:** a testable proposal with a rationale and expected observable outcomes. Mechanisms, competing explanations, and explicit falsification conditions are included when relevant to the contribution or test.
 - **Contribution:** the precise new knowledge or capability that successful work would establish.
-- **ResearchDecision:** a choice to continue, revise, defer, or reject, with evidence and alternatives.
+- **ResearchDecision:** a choice to pursue, refine, continue, revise, defer, reject, or stop, with evidence and alternatives.
 
 ## Identity and versioning
 
@@ -42,7 +42,7 @@ Use explicit status labels:
 - `unverified`: the source or locator has not been checked;
 - `unknown`: the available material cannot establish the point.
 
-A skill must not upgrade `indirect`, `secondary`, or `unverified` evidence to `direct` without checking the primary source.
+A skill must not upgrade `indirect`, `secondary`, or `unverified` evidence to `direct` without checking the primary source. When a qualitative evidence strength is recorded alongside status, use `strong`, `moderate`, or `weak` as defined in `docs/references/EVIDENCE-STANDARDS.md`.
 
 Hypothesis records require `rationale` and at least one observable prediction. The observable describes the expected task behavior; it need not specify a measurement protocol. `first_test` is optional and is populated when experiment planning begins. When updating an older record, add a rationale from the documented idea and record any changed judgment in the decision log.
 
