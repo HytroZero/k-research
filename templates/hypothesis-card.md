@@ -1,9 +1,10 @@
 > Placement: Update `research/directions/<direction-name>/proposal.md`. Integrate supporting hypotheses into that direction's proposal rather than creating separate cards. See [Project Layout](../docs/PROJECT-LAYOUT.md). This placement note is a template instruction, not output content.
 
-# Hypothesis Card
+# Direction Proposal
 
-- Hypothesis ID:
+- Direction / Hypothesis ID:
 - Status: candidate / under_review / testable / supported / weakened / rejected / revised / deferred
+- Review status: unreviewed / subagent_parallel / sequential_fallback / skipped_by_user / incomplete
 
 ## Problem and setting
 
@@ -23,16 +24,16 @@ Trace a small concrete instance through the current approach and the proposal, s
 
 ## Closest known work and difference
 
-Explain shared components, the actual difference, and why it matters. Link sources and any focused novelty audit.
+Explain shared components, the actual difference, and why it matters. Link sources and `related-work.md` when a novelty audit or detailed comparison exists.
 
 ## Expected outcome and contribution
 
 State the useful change in task behavior, efficiency, simplification, or understanding that success would add.
 
-## Basic feasibility and next design question
+## Feasibility, open objections, and next question
 
-Identify essential resources or access and the next issue to resolve in the problem or method. For reviewed candidates, note the review mode and remaining consequential objections; disclose any skipped or incomplete review.
+Identify essential data, model access, or compute requirements, any remaining fatal or major objections (with the probe or check that would resolve them), and the next issue to settle in the problem or method. Disclose any skipped or fallback review mode.
 
 ## Optional follow-on analysis
 
-Include mechanism, assumptions, competing explanations, or theory when they carry the contribution. Link a separate experiment plan when validation is requested or underway.
+Include mechanism, assumptions, competing explanations, or theory when they carry the contribution. Link `evaluation-plan.md` when validation is requested or underway.

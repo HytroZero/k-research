@@ -7,20 +7,20 @@
 
 ## Research question and scope
 
-Describe the task, setting, constraints, and why the problem matters. Link the paper index and state consequential corpus gaps.
+Describe the task, setting, constraints, and why the problem matters. Link `../papers/index.md` and state the corpus boundary, coverage gaps, and access limits.
 
 ## Field account
 
-Explain the major approaches, their relationships, and evidence-backed tensions relevant to this question. Link paper notes for detailed readings.
+Synthesize how major research lines and method families approach the problem, how they evolved, which assumptions they share, and where evidence or conclusions conflict. Distinguish field gaps from corpus gaps, cite exact locators, and link `../papers/notes/<paper-id>.md` for individual readings.
 
 ## Problems and candidate directions
 
-Describe worthwhile problems and initial solution angles. For developed candidates, summarize their problem, core idea, useful difference, and current status, then link the direction proposal. Keep detailed methods and worked examples in those proposals.
+For each worthwhile problem, describe the setting, specific bottleneck or questioned assumption, consequence, why existing approaches leave it open, a small concrete scenario, and initial solution angles. For candidates developed into distinct directions, summarize their problem, core idea, useful difference, and current status here, then link `directions/<direction-name>/proposal.md` for the full method and worked example.
 
 ## Current recommendation
 
-State which direction to pursue, refine, defer, or reject and why. Compare alternatives using problem value, method fit, closest work, and basic feasibility. Link the relevant entries in `decisions.md`.
+When comparing or selecting directions, state which to `pursue`, `refine`, `defer`, or `reject` and why, weighing problem value, method fit, difference from closest work, and basic feasibility. Link the relevant entries in `decisions.md`.
 
 ## Next action
 
-Identify the next design question, targeted search, or requested validation. Link existing evaluation plans when applicable; do not create one merely to fill this section.
+Identify the next design question, targeted search, or requested validation. Link existing `directions/<direction-name>/evaluation-plan.md` files when applicable; do not create one merely to fill this section.

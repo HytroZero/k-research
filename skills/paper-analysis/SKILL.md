@@ -13,7 +13,7 @@ Before writing project files, read [Project Layout](../../docs/PROJECT-LAYOUT.md
 
 ## Process
 
-1. **Identify the source.** Resolve title, authors, year, venue/version, DOI or preprint ID, canonical URL, and retrieval date. Note whether you inspected full text, abstract only, or metadata only.
+1. **Identify the source.** Resolve title, authors, year, venue/version, DOI or preprint ID, canonical URL, and retrieval date. Record the source-access level (`full_text`, `abstract_only`, `metadata_only`, `inaccessible`, or `unverified`).
 2. **Recover the question.** State the problem, target setting, intended audience, and why the authors consider it important.
 3. **Extract contribution claims.** Separate the paper's own claims from your interpretation. Classify each claim using `docs/references/SCIENTIFIC-CLAIMS.md`.
 4. **Reconstruct the mechanism or method.** Explain the central idea as a sequence of steps or causal links. List assumptions and dependencies.
@@ -42,6 +42,7 @@ Use `templates/paper-note.md`. Include:
 - evidence table with locators and relation to claims;
 - results and scope;
 - limitations;
+- relation to prior work;
 - unresolved questions;
 - confidence and missing information.
 

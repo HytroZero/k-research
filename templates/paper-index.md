@@ -10,16 +10,15 @@
 - Retrieval dates:
 - Coverage gaps and material exclusions:
 
-| Paper ID | BibTeX key | Title | Authors | Year | Venue / publication status | Qualifying venue or organization and verification link | Paper URL | Inclusion reason | PDF path or download status | Inspection depth |
-|---|---|---|---|---|---|---|---|---|---|---|
+| Paper ID | BibTeX key | Title | Authors | Year | Venue / status | Qualifying source and verification link | Paper URL | PDF path or status (version) | Inspection depth | Note | Inclusion reason |
+|---|---|---|---|---|---|---|---|---|---|---|---|
 
-PDF paths are relative to this index. For saved PDFs, record the download URL and version in the paper details below. Inspection depth describes what was actually read, independently of whether the PDF was saved.
+Paths are relative to `papers/index.md` (for example `pdf/<paper-id>.pdf` and `notes/<paper-id>.md`). For saved PDFs, include the version and download source link inline or in the exceptions section below. `Inspection depth` (`full_text`, `abstract_only`, `metadata_only`, `inaccessible`, `unverified`) records what was actually read, independently of whether a PDF was saved.
 
-## Paper details (as needed)
+## Paper details (only when needed)
+
+Add an entry here only when a paper needs context that does not fit cleanly in the table—such as a non-obvious substantive-preprint eligibility rationale, multiple conflicting versions, or unresolved access and metadata issues.
 
 - Paper ID:
-- Source eligibility rationale:
-- PDF source URL and saved version:
-- Reading note link (when available):
-- Alternate publication / preprint links:
+- Source eligibility or version note:
 - Missing metadata or access issue:

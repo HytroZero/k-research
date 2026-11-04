@@ -21,7 +21,7 @@ Before writing project files, read [Project Layout](../../docs/PROJECT-LAYOUT.md
 6. **Update status.** Use `supported`, `weakened`, `rejected`, `revised`, or `unresolved` as appropriate. Status is qualitative and must be justified. Do not manufacture precise probabilities.
 7. **Revisit downstream artifacts.** Mark affected opportunities, contribution claims, novelty judgments, test plans, and decisions as current, superseded, or requiring review.
 8. **Choose the next decision.** Recommend continue, revise, run a discriminating follow-up, defer, or stop. Explain what evidence would change that recommendation.
-9. **Record the change.** Update current artifacts and append meaningful changes of judgment, their evidence, and reasons to `research/decisions.md`. Follow the shared state contract; prior file copies are not required.
+9. **Record the change.** Update current artifacts and append meaningful changes of judgment, their evidence, and reasons to `research/decisions.md` using `templates/decision-record.md`. Follow the shared state contract; prior file copies are not required.
 
 ## Output
 

@@ -24,7 +24,7 @@ Before writing project files, read [Project Layout](../../docs/PROJECT-LAYOUT.md
 
 ## Output
 
-Provide the decision question, expected outcome, test setup, baseline and necessary controls, measurements, and a result-to-decision table. Include a prediction matrix only when comparing explanations. Record unresolved issues only if they affect interpretation or the next action.
+Use `templates/evaluation-plan.md`. Provide the decision question, expected outcome, test setup, baseline and necessary controls, measurements, and a result-to-decision table. Include a prediction matrix only when comparing explanations. Record unresolved issues only if they affect interpretation or the next action.
 
 The execution handoff should contain enough detail to implement the first test, including data, configurations, and outputs to record. Report this as a planned experiment in a separate artifact linked from the Research Brief.
 

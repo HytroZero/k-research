@@ -109,9 +109,11 @@
         "criterion": {
           "enum": [
             "conference",
+            "journal",
             "team",
             "university",
-            "company"
+            "company",
+            "substantive_preprint"
           ]
         },
         "name": {

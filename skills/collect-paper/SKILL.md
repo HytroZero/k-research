@@ -48,7 +48,7 @@ Retrieve BibTeX from an authoritative bibliographic export where possible. Other
 
 Use the standard project layout. Maintain one complete index and bibliography across collection runs.
 
-The index contains one row per retained paper with paper ID, citation key, title, authors, year, venue/publication status, qualifying source and verification link, canonical paper URL, inclusion reason, and relative PDF path or download status. Keep missing metadata explicit. Record inspection depth separately from download status.
+The index contains one row per retained paper with paper ID, citation key, title, authors, year, venue/publication status, qualifying source and verification link, canonical paper URL, relative PDF path or download status (with version), inspection depth, reading note link (when analyzed), and inclusion reason. Keep missing metadata explicit. Record inspection depth separately from download status.
 
 Use `templates/paper-index.md` from the suite root. If persisting structured records, use `schemas/paper.schema.json`; the Markdown index is sufficient without a state backend.
 

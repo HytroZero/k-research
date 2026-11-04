@@ -1,29 +1,29 @@
-> Placement: Append an entry to `research/decisions.md`. Use a stable decision-ID heading, nest the sections below within it, and link superseded entries in the same file. See [Project Layout](../docs/PROJECT-LAYOUT.md). This placement note is a template instruction, not output content.
+> Placement: Append an entry to `research/decisions.md` under `# Research Decisions`. Use the stable decision ID in the `##` entry heading, nest the sections below within it, and link superseded entries in the same file. See [Project Layout](../docs/PROJECT-LAYOUT.md). This placement note is a template instruction, not output content.
 
-# Research Decision
+## <decision-id>: <short summary>
 
-- Decision ID:
 - Date:
 - Project:
-- Decision: pursue / refine / defer / reject
+- Decision: pursue / refine / defer / reject / continue / revise / stop
 - Affected artifacts:
+- Supersedes: none (or link `#<prior-decision-id>`)
 
-## Decision statement
+### Decision and rationale
 
-## Alternatives considered
+State what was decided and why this path was chosen over the alternatives.
 
-## Evidence that mattered
+### Alternatives considered
 
-## Rationale
+Summarize the other directions, method designs, or interpretations weighed at this decision point and why they were not selected.
 
-## Decision-relevant risks (optional)
+### Evidence that mattered
 
-Include concrete issues and next actions only when they affect the decision.
+Cite the literature findings, closest-work comparisons, review objections, or experimental results that drove the decision. When updating from new results or papers, compare what the hypothesis predicted against what was observed.
 
-## Reconsideration trigger
+### Decision-relevant risks (optional)
 
-What new observation or evidence would cause this decision to be revisited?
+Include concrete unresolved issues and next actions only when they affect the decision.
 
-## Supersedes
+### Reconsideration trigger
 
-Link to prior decision-ID headings in `research/decisions.md`, if any.
+State what new observation, search result, or experimental outcome would cause this decision to be revisited.
