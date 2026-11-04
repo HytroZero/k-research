@@ -19,7 +19,7 @@ docs/references/DECISION-RUBRIC.md
 docs/references/EVIDENCE-STANDARDS.md
 docs/references/NOVELTY-TAXONOMY.md
 docs/references/SCIENTIFIC-CLAIMS.md
-examples/novelty-audit-toy-example.md
+examples/research-walkthrough.md
 schemas/claim.schema.json
 schemas/contribution.schema.json
 schemas/evidence.schema.json

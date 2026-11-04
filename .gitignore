@@ -1,6 +1,6 @@
 # Local examples and research outputs
 examples/**
-!examples/novelty-audit-toy-example.md
+!examples/research-walkthrough.md
 
 # macOS metadata
 .DS_Store
